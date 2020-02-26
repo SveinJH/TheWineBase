@@ -1,0 +1,49 @@
+:root {
+    --color-primary: #fcbb5a;
+    --color-primary-dark: #f27d42;
+    --color-secondary: #2ca0da;
+    --color-secondary-dark: #003552;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background: linear-gradient(
+        to right bottom,
+        var(--color-secondary),
+        var(--color-secondary-dark)
+    );
+}
+
+body {
+    width: 80vw;
+    height: 84vh;
+    margin: 8vh 10vw;
+    position: fixed;
+    max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    background-color: #fff;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.45);
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+}
