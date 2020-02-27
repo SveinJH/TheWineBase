@@ -1,0 +1,10 @@
+.Layout {
+    height: 100%;
+    display: grid;
+    grid-template-columns:
+        [full-start] minmax(3rem, 1fr) [center-start] repeat(
+            8,
+            [col-start] minmax(0.5rem, 14rem) [col-end]
+        )
+        [center-end] minmax(3rem, 1fr) [full-end];
+}

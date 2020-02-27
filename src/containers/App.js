@@ -4,6 +4,7 @@ import { Redirect, Route, BrowserRouter, Switch } from 'react-router-dom';
 import NavBar from '../components/Navigation/NavBar/NavBar';
 import Home from './Pages/Home/Home';
 import classes from './App.module.scss';
+import Layout from '../components/Layout/Layout';
 
 const App = () => {
     const [isAuth, setIsAuth] = useState(false);
@@ -19,7 +20,9 @@ const App = () => {
     return (
         <div className={classes.App}>
             <NavBar />
-            <BrowserRouter>{routes}</BrowserRouter>
+            <BrowserRouter>
+                <Layout>{routes}</Layout>
+            </BrowserRouter>
         </div>
     );
 };

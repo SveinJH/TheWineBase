@@ -1,0 +1,41 @@
+.NavItem a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.25s;
+
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        color: #fff;
+
+        & div {
+            transform: translateX(0.2rem);
+        }
+
+        & svg {
+            transform: translateX(-0.2rem);
+        }
+    }
+
+    & div {
+        margin-left: 0.6rem;
+        transition: all 0.25s;
+    }
+
+    & svg {
+        transition: all 0.25s;
+    }
+}
+
+.NavItem {
+    padding: 0 1.4rem;
+    transition: all 0.25s;
+
+    align-self: stretch;
+    display: flex;
+
+    &:hover {
+        background-color: var(--color-primary-dark);
+    }
+}
