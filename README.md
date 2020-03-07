@@ -14,6 +14,7 @@ Clone and yada yada... (TODO)
 - [ ] Add favourites page where one can rate the products added 
 - [ ] Add store locator system using geolocation and so on...
 - [X] Modern layout :)
+- [ ] Finish this readme
 
 ## Authors
 * **Svein Jakob Høie** - *Owner* - [SveinJH](https://github.com/SveinJH)
