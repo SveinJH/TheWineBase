@@ -24,8 +24,8 @@ html {
     font-size: 62.5%;
     background: linear-gradient(
         to right bottom,
-        var(--color-secondary),
-        var(--color-secondary-dark)
+        var(--color-primary),
+        var(--color-primary-dark)
     );
 }
 
@@ -39,7 +39,7 @@ body {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.6;
-    background-color: rgb(244, 244, 244);
+    background-color: rgb(246, 246, 246);
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.45);
 }
 
@@ -50,9 +50,34 @@ body {
 }
 
 :global {
+    .heading-1 {
+        color: #000;
+        font-size: 4rem;
+        text-align: center;
+    }
+
     .heading-2 {
         color: #000;
         font-size: 3rem;
         text-align: center;
+    }
+
+    .heading-3 {
+        color: #000;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .heading-4 {
+        color: #000;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .heading-5 {
+        color: #000;
+        font-size: 2.6rem;
+        text-align: center;
+        color: var(--color-primary-dark);
     }
 }

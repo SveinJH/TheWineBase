@@ -1,0 +1,110 @@
+.Product {
+    grid-column: full-start / full-end;
+    height: calc(84vh - 5rem);
+    position: relative;
+
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > button {
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+    }
+
+    &__container {
+        background-color: #fff;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+        display: flex;
+        height: 90%;
+        padding: 0 5rem;
+        max-width: 62%;
+        min-width: 54%;
+    }
+
+    &__category__main {
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #aaa;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    &__info {
+        padding: 2rem 0;
+        display: flex;
+        flex-flow: column;
+
+        &Container {
+            margin-top: 1rem;
+            background-color: rgb(244, 244, 244);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-flow: column;
+            padding: 2rem 0;
+        }
+    }
+
+    &__price {
+        color: var(--color-primary-dark);
+        font-size: 3.6rem;
+        line-height: 1.2;
+        margin-top: auto;
+
+        & span {
+            color: #222;
+            font-size: 2rem;
+        }
+
+        &Liter {
+            color: #777;
+            font-style: italic;
+            font-size: 1.4rem;
+            padding-bottom: 2rem;
+        }
+    }
+
+    &__percent,
+    &__volume {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        font-size: 2.2rem;
+        font-weight: bold;
+
+        & p {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #666;
+        }
+    }
+
+    &__img {
+        align-self: center;
+        padding-right: 5rem;
+    }
+
+    &__name {
+        line-height: 1.2;
+        font-size: 3rem;
+        color: #222;
+        padding-bottom: 0.6rem;
+        font-weight: 300;
+        border-bottom: 1px solid #ddd;
+    }
+
+    &__origin {
+        font-weight: 500;
+        padding: 1.8rem 0;
+    }
+
+    &__description {
+        color: #666;
+    }
+}

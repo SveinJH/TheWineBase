@@ -1,0 +1,35 @@
+.Button {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.6rem 2.5rem;
+    font-size: 2rem;
+    border: none;
+    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.35);
+    transition: all 0.25s;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.04);
+        background-color: var(--color-primary);
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+
+        &:hover {
+            transform: scale(1);
+        }
+    }
+}
+
+.Default {
+    background-color: var(--color-primary-dark);
+    border-radius: 10rem;
+    padding: 0.8rem 5rem;
+    font-weight: 500;
+    color: #fff;
+}

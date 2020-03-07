@@ -1,0 +1,23 @@
+.InputElement {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #eee;
+    margin-bottom: 2.5rem;
+    background-color: rgb(234, 234, 234);
+    padding: 0.6rem 1.4rem;
+    box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #aaa;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.Invalid {
+    border: 1px solid rgb(209, 79, 79);
+}
+
+/* input[type='checkbox'] {
+    width: 2rem;
+    height: 2rem;
+} */

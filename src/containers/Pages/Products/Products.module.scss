@@ -1,0 +1,11 @@
+.Products {
+    padding: 2rem 3rem;
+    height: calc(84vh - 5rem);
+    grid-column: full-start / full-end;
+
+    display: grid;
+    grid-gap: 2.4rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 25rem));
+    grid-auto-rows: 26rem;
+    justify-content: center;
+}

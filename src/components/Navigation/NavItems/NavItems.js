@@ -6,29 +6,43 @@ import NavItem from './NavItem/NavItem';
 const icons = [
     {
         name: 'location',
-        text: 'Stores'
+        text: 'Butikker',
+        link: '/'
     },
     {
         name: 'wine',
-        text: 'Products'
+        text: 'Produkter',
+        link: '/products'
+    },
+
+    {
+        name: 'heart',
+        text: 'Favoritter',
+        link: '/'
     },
     {
         name: 'user',
-        text: 'My page'
-    },
-    {
-        name: 'heart',
-        text: 'Favorites'
+        text: 'Min side',
+        link: '/'
     },
     {
         name: 'arrow-right',
-        text: 'Logout'
+        text: 'Logg ut',
+        link: '/'
     }
 ];
 
 const NavItems = props => {
     return icons.map(icon => {
-        return <NavItem name={icon.name} text={icon.text} size={30} />;
+        return (
+            <NavItem
+                key={icon.name}
+                name={icon.name}
+                text={icon.text}
+                size={30}
+                link={icon.link}
+            />
+        );
     });
 };
 

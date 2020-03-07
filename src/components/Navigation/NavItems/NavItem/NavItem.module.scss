@@ -1,13 +1,17 @@
 .NavItem a {
-    color: inherit;
+    color: #fff;
     text-decoration: none;
     transition: all 0.25s;
 
     display: flex;
     align-items: center;
 
+    & svg {
+        fill: #eee;
+    }
+
     &:hover {
-        color: #fff;
+        color: var(--color-primary);
 
         & div {
             transform: translateX(0.2rem);
@@ -34,8 +38,8 @@
 
     align-self: stretch;
     display: flex;
+}
 
-    &:hover {
-        background-color: var(--color-primary-dark);
-    }
+.Active {
+    color: #fff;
 }
