@@ -10,7 +10,7 @@ const NavItem = props => {
             <NavLink
                 exact={props.exact}
                 to={props.link}
-                activeClassName={classes.Active}
+                activeClassName="Active"
             >
                 <Icon name={props.name} size={props.size} />
                 <div>{props.text}</div>

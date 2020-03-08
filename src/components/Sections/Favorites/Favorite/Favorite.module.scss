@@ -1,0 +1,69 @@
+.Favorite {
+    height: 22rem;
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+
+    &__img {
+        height: 90%;
+
+        &Container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 26%;
+        }
+    }
+
+    &__info {
+        padding: 1.5rem;
+        display: flex;
+        flex-flow: column;
+    }
+
+    &__name {
+        color: #555;
+        font-size: 1.7rem;
+    }
+
+    &__attributes {
+        display: flex;
+    }
+
+    &__attribute {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        color: #fff;
+        background-color: var(--color-primary-dark);
+        padding: 0 1.4rem;
+        margin-right: 0.6rem;
+    }
+
+    &__rating {
+        margin-top: 1.2rem;
+        color: var(--color-primary);
+        font-size: 6rem;
+        font-weight: 300;
+        line-height: 1;
+
+        & span {
+            font-weight: 400;
+            font-size: 3.4rem;
+        }
+
+        & div {
+            color: #888;
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__buttons {
+        margin-top: auto;
+
+        & button {
+            margin-right: 1rem;
+        }
+    }
+}

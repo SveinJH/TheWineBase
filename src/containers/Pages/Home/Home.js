@@ -23,7 +23,7 @@ const categories = [
 
 const Home = props => {
     const handleCategoryClick = () => {
-        props.history.push('/products');
+        props.history.push('/produkter');
     };
 
     return (

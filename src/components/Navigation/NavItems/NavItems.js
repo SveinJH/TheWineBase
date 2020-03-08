@@ -7,28 +7,28 @@ const icons = [
     {
         name: 'location',
         text: 'Butikker',
-        link: '/'
+        link: '/butikker'
     },
     {
         name: 'wine',
         text: 'Produkter',
-        link: '/products'
+        link: '/produkter'
     },
 
     {
         name: 'heart',
         text: 'Favoritter',
-        link: '/'
+        link: '/favoritter'
     },
     {
         name: 'user',
         text: 'Min side',
-        link: '/'
+        link: '/minside'
     },
     {
         name: 'arrow-right',
         text: 'Logg ut',
-        link: '/'
+        link: '/utlogging'
     }
 ];
 

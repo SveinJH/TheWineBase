@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { connect } from 'react-redux';
 import ContentService from '../../../shared/services/contentService';
 
+import * as actions from '../../../store/actions/index';
 import { volumeFormatter } from '../../../shared/formats/productFormat';
 import classes from './Products.module.scss';
 import Product from '../../../components/Sections/Products/Product/Product';
@@ -22,7 +24,7 @@ const Products = props => {
     }, [mainCategory]);
 
     const handleProductClicked = id => {
-        props.history.push(`/products/${id}`);
+        props.history.push(`/produkter/${id}`);
     };
 
     let renderedProducts = <div>Laster...</div>;
@@ -46,4 +48,10 @@ const Products = props => {
     return <div className={classes.Products}>{renderedProducts}</div>;
 };
 
-export default Products;
+const mapStateToProps = state => {
+    return {
+        favoriteIds: state.fav.favoriteIds
+    };
+};
+
+export default connect(mapStateToProps)(Products);

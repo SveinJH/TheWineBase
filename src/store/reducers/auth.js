@@ -4,7 +4,8 @@ const initialState = {
     token: null,
     userId: null,
     error: null,
-    loading: false
+    loading: false,
+    email: null
 };
 
 const authStart = (state, action) => {
@@ -37,7 +38,8 @@ const authLoginSuccess = (state, action) => {
         loading: false,
         error: null,
         token: action.idToken,
-        userId: action.userId
+        userId: action.userId,
+        email: action.email
     };
 };
 

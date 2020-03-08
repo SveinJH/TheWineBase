@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { connect } from 'react-redux';
 import ContentService from '../../../../shared/services/contentService';
 
+import * as actions from '../../../../store/actions/index';
 import { volumeFormatter } from '../../../../shared/formats/productFormat';
 import classes from './ProductOverview.module.scss';
 import Button from '../../../UI/Button/Button';
@@ -11,6 +13,9 @@ const imgUrl = 'https://bilder.vinmonopolet.no/cache/515x515-0/';
 const ProductOverview = props => {
     const [product, setProduct] = useState();
     const [productId, setProductId] = useState(props.match.params.productId);
+    const [isFavorite, setIsFavorite] = useState(false);
+
+    const { favoriteIds, documentId, updateFavorites } = props;
 
     useEffect(() => {
         ContentService.getProduct(productId).then(response => {
@@ -18,8 +23,29 @@ const ProductOverview = props => {
         });
     }, [productId]);
 
+    useEffect(() => {
+        if (product) {
+            if (favoriteIds.includes(product.basic.productId)) {
+                setIsFavorite(true);
+            } else {
+                setIsFavorite(false);
+            }
+        }
+    }, [product, favoriteIds]);
+
     const handleGoBack = () => {
-        props.history.push('/products');
+        props.history.goBack();
+    };
+
+    const addFavorite = productId => {
+        const updatedIds = [...favoriteIds];
+        updatedIds.push(productId);
+        return { ids: updatedIds, documentId };
+    };
+
+    const removeFavorite = productId => {
+        const updatedIds = favoriteIds.filter(id => id !== productId);
+        return { ids: updatedIds, documentId };
     };
 
     let renderedProduct = (
@@ -29,6 +55,29 @@ const ProductOverview = props => {
     );
 
     if (product) {
+        let button = (
+            <Button
+                btnType="Default"
+                clicked={() =>
+                    updateFavorites(addFavorite(product.basic.productId))
+                }
+            >
+                Legg til i favoritter
+            </Button>
+        );
+        if (isFavorite) {
+            button = (
+                <Button
+                    btnType="Default"
+                    clicked={() =>
+                        updateFavorites(removeFavorite(product.basic.productId))
+                    }
+                >
+                    Fjern fra favoritter
+                </Button>
+            );
+        }
+
         renderedProduct = (
             <div className={classes.Product}>
                 <Button clicked={handleGoBack} btnType="Default">
@@ -72,9 +121,7 @@ const ProductOverview = props => {
                                 {product.prices[0].salesPricePrLiter} NOK /
                                 Liter
                             </div>
-                            <Button btnType="Default">
-                                Legg til i favoritter
-                            </Button>
+                            {button}
                         </div>
                     </div>
                 </div>
@@ -85,4 +132,18 @@ const ProductOverview = props => {
     return renderedProduct;
 };
 
-export default ProductOverview;
+const mapStateToProps = state => {
+    return {
+        favoriteIds: state.fav.favoriteIds,
+        documentId: state.fav.documentId
+    };
+};
+
+const mapDispatchToProps = dispatch => {
+    return {
+        updateFavorites: data =>
+            dispatch(actions.updateFavorites(data.ids, data.documentId))
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ProductOverview);

@@ -111,7 +111,7 @@ const Login = props => {
             <div className={classes.Login__info}>
                 <div className="heading-1">The Wine Base</div>
                 <div className={classes.Login__error}>
-                    {props.error ? <>Error: {props.error.message}</> : null}
+                    {props.error ? <>{props.error.message}</> : null}
                 </div>
                 {!props.loading ? (
                     <form

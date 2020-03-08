@@ -50,6 +50,10 @@ body {
 }
 
 :global {
+    .Active {
+        color: var(--color-primary) !important;
+    }
+
     .heading-1 {
         color: #000;
         font-size: 4rem;

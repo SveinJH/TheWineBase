@@ -20,6 +20,15 @@ class ContentService {
         const response = await axiosProductDetails.get(`?productId=${id}`);
         return response;
     };
+
+    getProductsByIds = async ids => {
+        const responses = await ids.map(async id => {
+            const product = await this.getProduct(id);
+            return product.data[0];
+        });
+        const products = Promise.all(responses);
+        return products;
+    };
 }
 
 export default new ContentService();

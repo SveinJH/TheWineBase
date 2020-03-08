@@ -15,4 +15,9 @@ const axiosAuthentication = axios.create({
     baseURL: 'https://identitytoolkit.googleapis.com/v1/accounts'
 });
 
-export { axiosProductDetails, axiosAuthentication };
+const axiosFirestore = axios.create({
+    baseURL:
+        'https://firestore.googleapis.com/v1beta1/projects/the-wine-base/databases/(default)/documents'
+});
+
+export { axiosProductDetails, axiosAuthentication, axiosFirestore };
