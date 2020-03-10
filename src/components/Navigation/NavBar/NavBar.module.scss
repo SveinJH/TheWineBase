@@ -3,6 +3,9 @@
     height: 5rem;
     padding: 0 2rem;
     font-size: 1.8rem;
+    position: fixed;
+    z-index: 10;
+    width: 80vw;
 
     display: flex;
     align-items: center;

@@ -1,25 +1,28 @@
 import * as actionTypes from '../actions/actionTypes';
+import { authMapError } from '../../shared/formats/authErrorFormat';
 
 const initialState = {
     token: null,
     userId: null,
     error: null,
     loading: false,
-    email: null
+    email: null,
+    userCreated: false
 };
 
 const authStart = (state, action) => {
     return {
         ...state,
         loading: true,
-        error: null
+        error: null,
+        userCreated: false
     };
 };
 
 const authFail = (state, action) => {
     return {
         ...state,
-        error: action.error,
+        error: { ...action.error, message: authMapError(action.error) },
         loading: false
     };
 };
@@ -28,7 +31,8 @@ const authCreateSuccess = (state, action) => {
     return {
         ...state,
         loading: false,
-        error: null
+        error: null,
+        userCreated: true
     };
 };
 
@@ -43,6 +47,12 @@ const authLoginSuccess = (state, action) => {
     };
 };
 
+const authLogout = (state, action) => {
+    return {
+        ...initialState
+    };
+};
+
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case actionTypes.AUTH_START:
@@ -53,6 +63,8 @@ const reducer = (state = initialState, action) => {
             return authCreateSuccess(state, action);
         case actionTypes.AUTH_LOGIN_SUCCESS:
             return authLoginSuccess(state, action);
+        case actionTypes.AUTH_LOGOUT:
+            return authLogout(state, action);
         default:
             return state;
     }

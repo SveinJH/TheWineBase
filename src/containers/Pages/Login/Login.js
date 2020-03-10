@@ -113,6 +113,9 @@ const Login = props => {
                 <div className={classes.Login__error}>
                     {props.error ? <>{props.error.message}</> : null}
                 </div>
+                <div className={classes.Login__success}>
+                    {props.userCreated ? <>Vennligst bekreft e-posten</> : null}
+                </div>
                 {!props.loading ? (
                     <form
                         className={classes.Login__form}
@@ -147,6 +150,7 @@ const Login = props => {
 const mapStateToProps = state => {
     return {
         error: state.auth.error,
+        userCreated: state.auth.userCreated,
         loading: state.auth.loading
     };
 };

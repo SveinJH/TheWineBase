@@ -1,6 +1,7 @@
 .Layout {
     height: 100%;
     display: grid;
+    grid-template-rows: 5rem;
     grid-template-columns:
         [full-start] minmax(3rem, 1fr) [center-start] repeat(
             8,

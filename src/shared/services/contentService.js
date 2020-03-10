@@ -1,10 +1,9 @@
 import { axiosProductDetails } from '../axios';
+import { generateQuery } from '../queries/contentQueries';
 
 class ContentService {
     getProducts = async query => {
-        const response = await axiosProductDetails.get(
-            '?maxResults=20&start=600'
-        );
+        const response = await axiosProductDetails.get(generateQuery(query));
 
         if (query.category) {
             response.data = response.data.filter(

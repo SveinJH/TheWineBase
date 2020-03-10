@@ -2,10 +2,36 @@
     padding: 2rem 3rem;
     height: calc(84vh - 5rem);
     grid-column: full-start / full-end;
+    grid-row: 2;
 
-    display: grid;
-    grid-gap: 2.4rem;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 25rem));
-    grid-auto-rows: 26rem;
-    justify-content: center;
+    &__container {
+        display: grid;
+        grid-gap: 2.4rem;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 25rem));
+        grid-auto-rows: 26rem;
+        justify-content: center;
+    }
+
+    &__filter {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        &Form {
+            display: flex;
+        }
+
+        & input {
+            margin: 0 1.4rem;
+            font-size: 1.8rem;
+            background-color: #ddd;
+            transition: all 0.2s;
+
+            &:hover,
+            &:focus {
+                transform: scale(1.04);
+            }
+        }
+    }
 }

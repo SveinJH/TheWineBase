@@ -41,6 +41,11 @@ body {
     line-height: 1.6;
     background-color: rgb(246, 246, 246);
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.45);
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .App {

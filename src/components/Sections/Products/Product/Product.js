@@ -25,7 +25,11 @@ const Product = props => {
                 </div>
             </div>
             <div className={classes.Product__heart}>
-                <Icon size={32} name={'heart'} />
+                <Icon
+                    size={32}
+                    name={props.isFavorite ? 'heart-full' : 'heart'}
+                    isFavorite={props.isFavorite}
+                />
             </div>
         </div>
     );

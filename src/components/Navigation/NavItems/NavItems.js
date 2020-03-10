@@ -28,7 +28,7 @@ const icons = [
     {
         name: 'arrow-right',
         text: 'Logg ut',
-        link: '/utlogging'
+        link: '/loggut'
     }
 ];
 

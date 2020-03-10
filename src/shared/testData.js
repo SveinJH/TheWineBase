@@ -1,4 +1,4 @@
-const testProducts = [
+export const testProducts = [
     {
         basic: {
             productId: '1266601',
@@ -1454,4 +1454,876 @@ const testProducts = [
     }
 ];
 
-export default testProducts;
+export const testStores = [
+    {
+        storeId: '116',
+        storeName: 'Sandnes, Kvadrat',
+        status: 'Open',
+        address: {
+            street: 'Gamle Stokkavei 1',
+            postalCode: '4313',
+            city: 'Sandnes',
+            gpsCoord: '58.876707;5.721903',
+            globalLocationNumber: '7080003252630',
+            organisationNumber: '980548759'
+        },
+        telephone: '22 01 50 00',
+        email: 'kundesenter@vinmonopolet.no',
+        category: '6',
+        openingHours: {
+            regularHours: [
+                {
+                    dayOfTheWeek: 'Monday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Tuesday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Wednesday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Thursday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Friday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Saturday',
+                    openingTime: '10:00',
+                    closingTime: '15:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Sunday',
+                    openingTime: '',
+                    closingTime: '',
+                    closed: true
+                }
+            ],
+            exceptionHours: []
+        },
+        lastChanged: {
+            date: '2020-01-06',
+            time: '06:14:39'
+        }
+    },
+    {
+        storeId: '152',
+        storeName: 'Oslo, Sandaker',
+        status: 'Open',
+        address: {
+            street: 'Sandakerveien 59',
+            postalCode: '0477',
+            city: 'Oslo',
+            gpsCoord: '59.9384265;10.7684746',
+            globalLocationNumber: '7080003252333',
+            organisationNumber: '873106972'
+        },
+        telephone: '22 01 50 00',
+        email: 'kundesenter@vinmonopolet.no',
+        category: '6',
+        openingHours: {
+            regularHours: [
+                {
+                    dayOfTheWeek: 'Monday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Tuesday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Wednesday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Thursday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Friday',
+                    openingTime: '09:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Saturday',
+                    openingTime: '09:00',
+                    closingTime: '15:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Sunday',
+                    openingTime: '',
+                    closingTime: '',
+                    closed: true
+                }
+            ],
+            exceptionHours: []
+        },
+        lastChanged: {
+            date: '2020-01-06',
+            time: '06:14:39'
+        }
+    },
+    {
+        storeId: '194',
+        storeName: 'Bærum, Sandvika',
+        status: 'Open',
+        address: {
+            street: 'Leif Tronstads plass 2',
+            postalCode: '1337',
+            city: 'Sandvika',
+            gpsCoord: '59.89284471;10.52303',
+            globalLocationNumber: '7080001207571',
+            organisationNumber: '973107100'
+        },
+        telephone: '22 01 50 00',
+        email: 'kundesenter@vinmonopolet.no',
+        category: '6',
+        openingHours: {
+            regularHours: [
+                {
+                    dayOfTheWeek: 'Monday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Tuesday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Wednesday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Thursday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Friday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Saturday',
+                    openingTime: '10:00',
+                    closingTime: '15:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Sunday',
+                    openingTime: '',
+                    closingTime: '',
+                    closed: true
+                }
+            ],
+            exceptionHours: []
+        },
+        lastChanged: {
+            date: '2020-01-06',
+            time: '06:14:39'
+        }
+    },
+    {
+        storeId: '241',
+        storeName: 'Sandnes, Sentrum',
+        status: 'Open',
+        address: {
+            street: 'Elvegaten 23',
+            postalCode: '4306',
+            city: 'Sandnes',
+            gpsCoord: '58.8505109;5.7388721',
+            globalLocationNumber: '7080003252647',
+            organisationNumber: '973107275'
+        },
+        telephone: '22 01 50 00',
+        email: 'kundesenter@vinmonopolet.no',
+        category: '6',
+        openingHours: {
+            regularHours: [
+                {
+                    dayOfTheWeek: 'Monday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Tuesday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Wednesday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Thursday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Friday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Saturday',
+                    openingTime: '10:00',
+                    closingTime: '15:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Sunday',
+                    openingTime: '',
+                    closingTime: '',
+                    closed: true
+                }
+            ],
+            exceptionHours: []
+        },
+        lastChanged: {
+            date: '2020-01-06',
+            time: '06:14:39'
+        }
+    },
+    {
+        storeId: '253',
+        storeName: 'Kristiansand, Sørlandssenteret',
+        status: 'Open',
+        address: {
+            street: 'Barstølv. 31-35',
+            postalCode: '4636',
+            city: 'Kristiansand S',
+            gpsCoord: '58.1799;8.1333',
+            globalLocationNumber: '7080003251770',
+            organisationNumber: '973107119'
+        },
+        telephone: '22 01 50 00',
+        email: 'kundesenter@vinmonopolet.no',
+        category: '6',
+        openingHours: {
+            regularHours: [
+                {
+                    dayOfTheWeek: 'Monday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Tuesday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Wednesday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Thursday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Friday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Saturday',
+                    openingTime: '10:00',
+                    closingTime: '15:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Sunday',
+                    openingTime: '',
+                    closingTime: '',
+                    closed: true
+                }
+            ],
+            exceptionHours: []
+        },
+        lastChanged: {
+            date: '2020-01-06',
+            time: '06:14:39'
+        }
+    },
+    {
+        storeId: '254',
+        storeName: 'Kristiansand, Lillemarkens',
+        status: 'Open',
+        address: {
+            street: 'Gyldenløvesgate 1C',
+            postalCode: '4611',
+            city: 'Kristiansand S',
+            gpsCoord: '58.1452;7.9915',
+            globalLocationNumber: '7080003251763',
+            organisationNumber: '973106759'
+        },
+        telephone: '22 01 50 00',
+        email: 'kundesenter@vinmonopolet.no',
+        category: '6',
+        openingHours: {
+            regularHours: [
+                {
+                    dayOfTheWeek: 'Monday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Tuesday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Wednesday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Thursday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Friday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Saturday',
+                    openingTime: '10:00',
+                    closingTime: '15:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Sunday',
+                    openingTime: '',
+                    closingTime: '',
+                    closed: true
+                }
+            ],
+            exceptionHours: []
+        },
+        lastChanged: {
+            date: '2020-01-06',
+            time: '06:14:39'
+        }
+    },
+    {
+        storeId: '268',
+        storeName: 'Sandnessjøen',
+        status: 'Open',
+        address: {
+            street: 'Amfi Skansen, Torolv Kveldulsonsg 24-26',
+            postalCode: '8800',
+            city: 'Sandnessjøen',
+            gpsCoord: '66.02200791; 12.6339',
+            globalLocationNumber: '7080003252654',
+            organisationNumber: '873107162'
+        },
+        telephone: '22 01 50 00',
+        email: 'kundesenter@vinmonopolet.no',
+        category: '4',
+        openingHours: {
+            regularHours: [
+                {
+                    dayOfTheWeek: 'Monday',
+                    openingTime: '10:00',
+                    closingTime: '17:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Tuesday',
+                    openingTime: '10:00',
+                    closingTime: '17:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Wednesday',
+                    openingTime: '10:00',
+                    closingTime: '17:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Thursday',
+                    openingTime: '10:00',
+                    closingTime: '17:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Friday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Saturday',
+                    openingTime: '10:00',
+                    closingTime: '15:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Sunday',
+                    openingTime: '',
+                    closingTime: '',
+                    closed: true
+                }
+            ],
+            exceptionHours: []
+        },
+        lastChanged: {
+            date: '2020-01-06',
+            time: '06:14:39'
+        }
+    },
+    {
+        storeId: '283',
+        storeName: 'Sandefjord',
+        status: 'Open',
+        address: {
+            street: 'Jernbanealleen 13',
+            postalCode: '3210',
+            city: 'Sandefjord',
+            gpsCoord: '59.1293529;10.2252665',
+            globalLocationNumber: '7080003252623',
+            organisationNumber: '973106813'
+        },
+        telephone: '22 01 50 00',
+        email: 'kundesenter@vinmonopolet.no',
+        category: '6',
+        openingHours: {
+            regularHours: [
+                {
+                    dayOfTheWeek: 'Monday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Tuesday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Wednesday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Thursday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Friday',
+                    openingTime: '09:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Saturday',
+                    openingTime: '09:00',
+                    closingTime: '15:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Sunday',
+                    openingTime: '',
+                    closingTime: '',
+                    closed: true
+                }
+            ],
+            exceptionHours: []
+        },
+        lastChanged: {
+            date: '2020-01-06',
+            time: '06:14:39'
+        }
+    },
+    {
+        storeId: '306',
+        storeName: 'Lillesand',
+        status: 'Open',
+        address: {
+            street: 'Storgata 2',
+            postalCode: '4790',
+            city: 'Lillesand',
+            gpsCoord: '58.249204;8.376206',
+            globalLocationNumber: '7080003251893',
+            organisationNumber: '984584385'
+        },
+        telephone: '22 01 50 00',
+        email: 'kundesenter@vinmonopolet.no',
+        category: '4',
+        openingHours: {
+            regularHours: [
+                {
+                    dayOfTheWeek: 'Monday',
+                    openingTime: '10:00',
+                    closingTime: '17:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Tuesday',
+                    openingTime: '10:00',
+                    closingTime: '17:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Wednesday',
+                    openingTime: '10:00',
+                    closingTime: '17:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Thursday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Friday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Saturday',
+                    openingTime: '10:00',
+                    closingTime: '15:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Sunday',
+                    openingTime: '',
+                    closingTime: '',
+                    closed: true
+                }
+            ],
+            exceptionHours: []
+        },
+        lastChanged: {
+            date: '2020-01-06',
+            time: '06:14:39'
+        }
+    },
+    {
+        storeId: '346',
+        storeName: 'Sandane',
+        status: 'Open',
+        address: {
+            street: 'Sandane Senter, Krånavegen 3',
+            postalCode: '6823',
+            city: 'Sandane',
+            gpsCoord: '61.7775637;6.2145905',
+            globalLocationNumber: '7080003252616',
+            organisationNumber: '989672606'
+        },
+        telephone: '22 01 50 00',
+        email: 'kundesenter@vinmonopolet.no',
+        category: '2',
+        openingHours: {
+            regularHours: [
+                {
+                    dayOfTheWeek: 'Monday',
+                    openingTime: '',
+                    closingTime: '',
+                    closed: true
+                },
+                {
+                    dayOfTheWeek: 'Tuesday',
+                    openingTime: '11:00',
+                    closingTime: '17:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Wednesday',
+                    openingTime: '11:00',
+                    closingTime: '17:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Thursday',
+                    openingTime: '11:00',
+                    closingTime: '17:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Friday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Saturday',
+                    openingTime: '10:00',
+                    closingTime: '15:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Sunday',
+                    openingTime: '',
+                    closingTime: '',
+                    closed: true
+                }
+            ],
+            exceptionHours: []
+        },
+        lastChanged: {
+            date: '2020-01-06',
+            time: '06:14:39'
+        }
+    },
+    {
+        storeId: '378',
+        storeName: 'Sørumsand',
+        status: 'Open',
+        address: {
+            street: 'Villavegen 1',
+            postalCode: '1920',
+            city: 'Sørumsand',
+            gpsCoord: '59.98717;11.24458',
+            globalLocationNumber: '7080003253125',
+            organisationNumber: '993208140'
+        },
+        telephone: '22 01 50 00',
+        email: 'kundesenter@vinmonopolet.no',
+        category: '3',
+        openingHours: {
+            regularHours: [
+                {
+                    dayOfTheWeek: 'Monday',
+                    openingTime: '12:00',
+                    closingTime: '17:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Tuesday',
+                    openingTime: '10:00',
+                    closingTime: '17:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Wednesday',
+                    openingTime: '10:00',
+                    closingTime: '17:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Thursday',
+                    openingTime: '10:00',
+                    closingTime: '17:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Friday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Saturday',
+                    openingTime: '10:00',
+                    closingTime: '15:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Sunday',
+                    openingTime: '',
+                    closingTime: '',
+                    closed: true
+                }
+            ],
+            exceptionHours: []
+        },
+        lastChanged: {
+            date: '2020-01-06',
+            time: '06:14:39'
+        }
+    },
+    {
+        storeId: '386',
+        storeName: 'Kristiansand, Vågsbygd',
+        status: 'Open',
+        address: {
+            street: 'Kirsten Flagstadsvei 30-32',
+            postalCode: '4621',
+            city: 'Kristiansand S',
+            gpsCoord: '58.1253;7.9526',
+            globalLocationNumber: '7080001215385',
+            organisationNumber: '993873462'
+        },
+        telephone: '22 01 50 00',
+        email: 'kundesenter@vinmonopolet.no',
+        category: '4',
+        openingHours: {
+            regularHours: [
+                {
+                    dayOfTheWeek: 'Monday',
+                    openingTime: '10:00',
+                    closingTime: '17:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Tuesday',
+                    openingTime: '10:00',
+                    closingTime: '17:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Wednesday',
+                    openingTime: '10:00',
+                    closingTime: '17:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Thursday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Friday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Saturday',
+                    openingTime: '10:00',
+                    closingTime: '15:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Sunday',
+                    openingTime: '',
+                    closingTime: '',
+                    closed: true
+                }
+            ],
+            exceptionHours: []
+        },
+        lastChanged: {
+            date: '2020-01-06',
+            time: '06:14:39'
+        }
+    },
+    {
+        storeId: '407',
+        storeName: 'Sande',
+        status: 'Open',
+        address: {
+            street: 'Kostegata 2',
+            postalCode: '3070',
+            city: 'Sande I Vestfold',
+            gpsCoord: '59.58743;10.20635',
+            globalLocationNumber: '7080001253486',
+            organisationNumber: '897320142'
+        },
+        telephone: '22 01 50 00',
+        email: 'kundesenter@vinmonopolet.no',
+        category: '3',
+        openingHours: {
+            regularHours: [
+                {
+                    dayOfTheWeek: 'Monday',
+                    openingTime: '10:00',
+                    closingTime: '17:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Tuesday',
+                    openingTime: '10:00',
+                    closingTime: '17:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Wednesday',
+                    openingTime: '10:00',
+                    closingTime: '17:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Thursday',
+                    openingTime: '10:00',
+                    closingTime: '17:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Friday',
+                    openingTime: '10:00',
+                    closingTime: '18:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Saturday',
+                    openingTime: '10:00',
+                    closingTime: '15:00',
+                    closed: false
+                },
+                {
+                    dayOfTheWeek: 'Sunday',
+                    openingTime: '',
+                    closingTime: '',
+                    closed: true
+                }
+            ],
+            exceptionHours: []
+        },
+        lastChanged: {
+            date: '2020-01-06',
+            time: '06:14:39'
+        }
+    }
+];

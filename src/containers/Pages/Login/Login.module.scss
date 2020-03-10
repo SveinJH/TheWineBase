@@ -18,7 +18,8 @@
         }
     }
 
-    &__error {
+    &__error,
+    &__success {
         font-size: 2rem;
         color: rgb(230, 65, 65);
         position: absolute;
@@ -26,6 +27,10 @@
         font-weight: 500;
         transform: translateX(-50%);
         left: 50%;
+    }
+
+    &__success {
+        color: rgb(106, 175, 60) !important;
     }
 
     &__info {

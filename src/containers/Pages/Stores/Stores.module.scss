@@ -1,0 +1,20 @@
+.Stores {
+    padding: 2rem;
+    grid-column: full-start / full-end;
+    grid-row: 2;
+
+    &__closest {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin: 2rem 0 4rem;
+    }
+
+    &__container {
+        margin-top: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(36rem, 36rem));
+        display: grid;
+        grid-gap: 1.2rem;
+        justify-content: center;
+    }
+}

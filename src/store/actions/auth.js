@@ -69,11 +69,17 @@ export const loginUser = userData => {
                 if (isVerified) {
                     dispatch(authLoginSuccess(data));
                 } else {
-                    dispatch(authFail({ message: 'Bruker ikke bekreftet' }));
+                    dispatch(authFail({ message: 'NOT_VERIFIED' }));
                 }
             })
             .catch(err => {
                 dispatch(authFail(err.response.data.error));
             });
+    };
+};
+
+export const onLogout = () => {
+    return {
+        type: actionTypes.AUTH_LOGOUT
     };
 };

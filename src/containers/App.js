@@ -6,11 +6,14 @@ import { getFavorites } from '../store/actions/index';
 import NavBar from '../components/Navigation/NavBar/NavBar';
 import Home from './Pages/Home/Home';
 import Login from '../containers/Pages/Login/Login';
+import Stores from './Pages/Stores/Stores';
 import Products from './Pages/Products/Products';
 import Favorites from './Pages/Favorites/Favorites';
+import Logout from '../components/Sections/Logout/Logout';
 import Layout from '../components/Layout/Layout';
 import classes from './App.module.scss';
 import ProductOverview from '../components/Sections/Products/ProductOverview/ProductOverview';
+import StoreOverview from '../components/Sections/Stores/StoreOverview/StoreOverview';
 
 const App = props => {
     const { email, isAuth, getFavorites } = props;
@@ -30,7 +33,10 @@ const App = props => {
                     path="/produkter/:productId"
                     component={ProductOverview}
                 />
+                <Route path="/butikker" exact component={Stores} />
+                <Route path="/butikker/:storeId" component={StoreOverview} />
                 <Route path="/favoritter" component={Favorites} />
+                <Route path="/loggut" component={Logout} />
                 <Route path="/" exact component={Home} />
                 <Redirect to="/" />
             </Switch>
@@ -54,7 +60,7 @@ const App = props => {
 
 const mapStateToProps = state => {
     return {
-        isAuth: state.auth.token !== null,
+        isAuth: state.auth.token === null,
         email: state.auth.email,
         error: state.auth.error,
         loading: state.auth.loading

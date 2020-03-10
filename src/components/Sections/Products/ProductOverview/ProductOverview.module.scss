@@ -2,6 +2,7 @@
     grid-column: full-start / full-end;
     height: calc(84vh - 5rem);
     position: relative;
+    grid-row: 2;
 
     line-height: 1.4;
     display: flex;
@@ -88,6 +89,7 @@
     &__img {
         align-self: center;
         padding-right: 5rem;
+        max-width: 33rem;
     }
 
     &__name {
