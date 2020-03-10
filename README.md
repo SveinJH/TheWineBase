@@ -15,6 +15,7 @@ Clone and yada yada... (TODO)
 - [ ] Add store locator system using geolocation and so on...
 - [X] Modern layout :)
 - [ ] Finish this readme
+- [ ] Responsive
 
 ## Authors
 * **Svein Jakob Høie** - *Owner* - [SveinJH](https://github.com/SveinJH)
