@@ -11,7 +11,8 @@ Clone and yada yada... (TODO)
 - [ ] Advanced product fetching (filtering etc.)
 - [X] Simple authentication system (email and password)
 - [ ] Signup with more info than email and pw
-- [ ] Add favourites page where one can rate the products added 
+- [X] Add favourites page
+- [ ] Add rating to favorites page 
 - [ ] Add store locator system using geolocation and so on...
 - [X] Modern layout :)
 - [ ] Finish this readme
