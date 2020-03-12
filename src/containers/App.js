@@ -60,7 +60,7 @@ const App = props => {
 
 const mapStateToProps = state => {
     return {
-        isAuth: state.auth.token === null,
+        isAuth: state.auth.token !== null,
         email: state.auth.email,
         error: state.auth.error,
         loading: state.auth.loading
