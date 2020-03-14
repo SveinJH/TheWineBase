@@ -10,6 +10,7 @@
         grid-template-columns: repeat(auto-fit, minmax(20rem, 25rem));
         grid-auto-rows: 26rem;
         justify-content: center;
+        padding: 2rem 0;
     }
 
     &__filter {

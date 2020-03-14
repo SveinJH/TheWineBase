@@ -1,0 +1,30 @@
+.Store {
+    grid-row: 2;
+    grid-column: full-start / full-end;
+    padding: 1rem 0;
+    height: calc(84vh - 5rem);
+
+    &__container {
+        display: flex;
+        width: 100%;
+        height: calc(100% - 4rem);
+    }
+
+    &__map {
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & div {
+            border-radius: 1rem;
+        }
+    }
+
+    &__info {
+        background-color: turquoise;
+        width: 50%;
+    }
+}

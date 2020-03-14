@@ -52,12 +52,14 @@ export const updateFavorites = (favoriteIds, documentId) => {
         FirestoreService.updateFavorites(favoriteIds, documentId)
             .then(response => {
                 const updatedDocId = response.data.name.slice(59);
-                const updatedFavIds = response.data.fields.favorites.arrayValue.values.map(
-                    id => {
+                console.log(response.data.fields.favorites.arrayValue);
+                const values = response.data.fields.favorites.arrayValue.values;
+                let updatedFavIds = [];
+                if (values) {
+                    updatedFavIds = values.map(id => {
                         return id.integerValue;
-                    }
-                );
-                console.log(updatedDocId);
+                    });
+                }
                 dispatch(favoritesSuccess(updatedFavIds, updatedDocId));
             })
             .catch(err => {

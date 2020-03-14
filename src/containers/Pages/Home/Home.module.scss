@@ -4,13 +4,14 @@
     color: var(--color-primary);
     grid-column: center-start / center-end;
     grid-row: 2;
+    height: calc(84vh - 5rem);
 
     &__categories {
         margin-top: 3rem;
         display: grid;
         grid-column-gap: 4rem;
         justify-content: center;
-        grid-template-columns: repeat(auto-fit, minmax(10rem, 30rem));
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 28%));
     }
 
     &__findStores {
@@ -22,7 +23,7 @@
         display: inline-block;
         width: 40%;
         margin-left: 30%;
-        margin-top: 6rem;
+        margin-top: 4rem;
         height: 8rem;
         display: flex;
         align-items: center;
