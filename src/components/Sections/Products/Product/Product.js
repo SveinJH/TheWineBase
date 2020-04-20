@@ -3,7 +3,7 @@ import React from 'react';
 import Icon from '../../../UI/Icon/Icon';
 import classes from './Product.module.scss';
 
-const Product = props => {
+const Product = (props) => {
     return (
         <div className={classes.Product} onClick={props.clicked}>
             <img className={classes.Product__img} src={props.img} alt="" />
@@ -18,7 +18,7 @@ const Product = props => {
                 <div
                     className={['heading-5', classes.Product__price].join(' ')}
                 >
-                    {props.price}0{' '}
+                    {props.price}{' '}
                     <span style={{ fontSize: '1.4rem', color: '#333' }}>
                         NOK
                     </span>

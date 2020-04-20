@@ -1,4 +1,4 @@
-const volumeFormatter = volume => {
+const volumeFormatter = (volume) => {
     if (volume >= 1) {
         return `${volume} L`;
     } else {
@@ -6,4 +6,8 @@ const volumeFormatter = volume => {
     }
 };
 
-export { volumeFormatter };
+const priceFormatter = (price) => {
+    return price.toFixed(2);
+};
+
+export { volumeFormatter, priceFormatter };

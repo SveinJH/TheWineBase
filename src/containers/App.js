@@ -15,7 +15,7 @@ import classes from './App.module.scss';
 import ProductOverview from '../components/Sections/Products/ProductOverview/ProductOverview';
 import StoreOverview from '../components/Sections/Stores/StoreOverview/StoreOverview';
 
-const App = props => {
+const App = (props) => {
     const { email, isAuth, getFavorites } = props;
 
     useEffect(() => {
@@ -58,18 +58,18 @@ const App = props => {
     );
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
     return {
         isAuth: state.auth.token === null,
         email: state.auth.email,
         error: state.auth.error,
-        loading: state.auth.loading
+        loading: state.auth.loading,
     };
 };
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
     return {
-        getFavorites: email => dispatch(getFavorites(email))
+        getFavorites: (email) => dispatch(getFavorites(email)),
     };
 };
 

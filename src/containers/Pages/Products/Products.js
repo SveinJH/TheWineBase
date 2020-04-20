@@ -11,18 +11,18 @@ import { testProducts } from '../../../shared/testData';
 
 const imgURL = 'https://bilder.vinmonopolet.no/cache/300x300-0/';
 
-const Products = props => {
+const Products = (props) => {
     const [filter, setFilter] = useState({
         search: {
             elementType: 'input',
             elementConfig: {
                 type: 'text',
-                placeholder: 'Søk etter produkter'
+                placeholder: 'Søk etter produkter',
             },
             value: '',
             validation: {},
-            valid: true
-        }
+            valid: true,
+        },
     });
     const [products, setProducts] = useState();
     const [mainCategory, setMainCategory] = useState();
@@ -37,7 +37,7 @@ const Products = props => {
         ); */
 
         const prods = [...testProducts];
-        prods.forEach(prod => {
+        prods.forEach((prod) => {
             if (favoriteIds.includes(prod.basic.productId)) {
                 prod.basic.isFavorite = true;
             } else {
@@ -48,14 +48,14 @@ const Products = props => {
         setProducts(prods);
     }, [mainCategory, favoriteIds]);
 
-    const handleProductClicked = id => {
+    const handleProductClicked = (id) => {
         props.history.push(`/produkter/${id}`);
     };
 
-    const handleSearch = event => {
+    const handleSearch = (event) => {
         event.preventDefault();
         const query = { search: filter.search.value, maxResults: 20 };
-        ContentService.getProducts(query).then(res => {
+        ContentService.getProducts(query).then((res) => {
             setProducts(res.data);
         });
     };
@@ -65,8 +65,8 @@ const Products = props => {
             ...filter,
             [id]: {
                 ...filter[id],
-                value: event.target.value
-            }
+                value: event.target.value,
+            },
         };
         setFilter(updatedFilter);
     };
@@ -80,7 +80,7 @@ const Products = props => {
                     isFavorite={prod.basic.isFavorite}
                     key={prod.basic.productId}
                     name={prod.basic.productShortName}
-                    price={prod.prices[0].salesPrice}
+                    price={prod.prices[0].salesPrice.toFixed(2)}
                     volume={volumeFormatter(prod.basic.volume)}
                     category={prod.classification.subProductTypeName}
                     img={`${imgURL}${prod.basic.productId}-1.jpg`}
@@ -90,20 +90,20 @@ const Products = props => {
         });
     }
 
-    const filterElements = Object.keys(filter).map(el => {
+    const filterElements = Object.keys(filter).map((el) => {
         return {
             id: el,
-            config: filter[el]
+            config: filter[el],
         };
     });
-    let filters = filterElements.map(el => {
+    let filters = filterElements.map((el) => {
         return (
             <Input
                 key={el.id}
                 elementType={el.config.elementType}
                 elementConfig={el.config.elementConfig}
                 value={el.config.value}
-                changed={event => inputChangedHandler(event, el.id)}
+                changed={(event) => inputChangedHandler(event, el.id)}
             />
         );
     });
@@ -126,9 +126,9 @@ const Products = props => {
     );
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
     return {
-        favoriteIds: state.fav.favoriteIds
+        favoriteIds: state.fav.favoriteIds,
     };
 };
 

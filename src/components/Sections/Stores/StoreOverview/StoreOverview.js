@@ -1,20 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Map from './Map/Map';
+import ContentService from '../../../../shared/services/contentService';
 
 import { testStores } from '../../../../shared/testData';
 
 import classes from './StoreOverview.module.scss';
 import Spinner from '../../../UI/Spinner/Spinner';
 
-const StoreOverview = props => {
+const StoreOverview = (props) => {
     const { storeId } = useParams();
     const [store, setStore] = useState();
 
     useEffect(() => {
-        setStore(testStores[0]);
-        console.log(testStores[0]);
-    }, []);
+        ContentService.getStore(storeId).then((response) => {
+            setStore(response.data[0]);
+        });
+    }, [storeId]);
 
     let renderedStore = <Spinner />;
     if (store) {
@@ -31,7 +33,26 @@ const StoreOverview = props => {
                             name={store.storeName}
                         />
                     </div>
-                    <div className={classes.Store__info}></div>
+                    <div className={classes.Store__info}>
+                        <div>
+                            <div>Adresse</div>
+                            <div>
+                                {store.address.street}
+                                <div>
+                                    {store.address.postalCode}{' '}
+                                    {store.address.city}
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>E-post</div>
+                            <div>{store.email}</div>
+                        </div>
+                        <div>
+                            <div>Telefon</div>
+                            <div>{store.telephone}</div>
+                        </div>
+                    </div>
                 </div>
             </>
         );

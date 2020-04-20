@@ -1,24 +1,28 @@
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import { connect } from 'react-redux';
 import ContentService from '../../../../shared/services/contentService';
 
 import * as actions from '../../../../store/actions/index';
-import { volumeFormatter } from '../../../../shared/formats/productFormat';
+import {
+    volumeFormatter,
+    priceFormatter,
+} from '../../../../shared/formats/productFormat';
 import classes from './ProductOverview.module.scss';
 import Button from '../../../UI/Button/Button';
 import Spinner from '../../../UI/Spinner/Spinner';
 
 const imgUrl = 'https://bilder.vinmonopolet.no/cache/515x515-0/';
 
-const ProductOverview = props => {
+const ProductOverview = (props) => {
+    const { productId } = useParams();
     const [product, setProduct] = useState();
-    const [productId, setProductId] = useState(props.match.params.productId);
     const [isFavorite, setIsFavorite] = useState(false);
 
     const { favoriteIds, documentId, updateFavorites } = props;
 
     useEffect(() => {
-        ContentService.getProduct(productId).then(response => {
+        ContentService.getProduct(productId).then((response) => {
             setProduct(response.data[0]);
         });
     }, [productId]);
@@ -37,14 +41,14 @@ const ProductOverview = props => {
         props.history.goBack();
     };
 
-    const addFavorite = productId => {
+    const addFavorite = (productId) => {
         const updatedIds = [...favoriteIds];
         updatedIds.push(productId);
         return { ids: updatedIds, documentId };
     };
 
-    const removeFavorite = productId => {
-        const updatedIds = favoriteIds.filter(id => id !== productId);
+    const removeFavorite = (productId) => {
+        const updatedIds = favoriteIds.filter((id) => id !== productId);
         return { ids: updatedIds, documentId };
     };
 
@@ -115,7 +119,8 @@ const ProductOverview = props => {
                                 {product.basic.alcoholContent}%
                             </div>
                             <div className={classes.Product__price}>
-                                {product.prices[0].salesPrice}0 <span>NOK</span>
+                                {priceFormatter(product.prices[0].salesPrice)}{' '}
+                                <span>NOK</span>
                             </div>
                             <div className={classes.Product__priceLiter}>
                                 {product.prices[0].salesPricePrLiter} NOK /
@@ -132,17 +137,17 @@ const ProductOverview = props => {
     return renderedProduct;
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
     return {
         favoriteIds: state.fav.favoriteIds,
-        documentId: state.fav.documentId
+        documentId: state.fav.documentId,
     };
 };
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
     return {
-        updateFavorites: data =>
-            dispatch(actions.updateFavorites(data.ids, data.documentId))
+        updateFavorites: (data) =>
+            dispatch(actions.updateFavorites(data.ids, data.documentId)),
     };
 };
 
