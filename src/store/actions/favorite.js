@@ -3,66 +3,75 @@ import * as actionTypes from './actionTypes';
 
 export const favoritesStart = () => {
     return {
-        type: actionTypes.FAVORITES_START
+        type: actionTypes.FAVORITES_START,
     };
 };
 
-export const favoritesFail = error => {
+export const favoritesFail = (error) => {
     return {
         type: actionTypes.FAVORITES_FAIL,
-        error
+        error,
     };
 };
 
-export const favoritesSuccess = (favoriteIds, documentId) => {
+export const favoritesSuccess = (favs, documentId) => {
     return {
         type: actionTypes.FAVORITES_SUCCESS,
-        favoriteIds,
-        documentId
+        favs,
+        documentId,
     };
 };
 
-export const getFavorites = email => {
-    return dispatch => {
+export const getFavorites = (email) => {
+    return (dispatch) => {
         FirestoreService.getFavorites(email)
-            .then(response => {
+            .then((response) => {
                 const documentId = response.data[0].document.name.slice(59);
                 const values =
                     response.data[0].document.fields.favorites.arrayValue
                         .values;
-                let favoriteIds = [];
+                let favs = [];
                 if (values) {
-                    favoriteIds = values.map(id => {
-                        return id.integerValue;
+                    favs = values.map((fav) => {
+                        //return id.integerValue;
+                        return {
+                            id: fav.mapValue.fields.id.integerValue,
+                            rating: fav.mapValue.fields.rating.integerValue,
+                        };
                     });
                 }
-                dispatch(favoritesSuccess(favoriteIds, documentId));
+                dispatch(favoritesSuccess(favs, documentId));
             })
-            .catch(err => {
+            .catch((err) => {
                 console.log(err);
                 dispatch(favoritesFail(err));
             });
     };
 };
 
-export const updateFavorites = (favoriteIds, documentId) => {
-    return dispatch => {
+export const updateFavorites = (favorites, documentId) => {
+    return (dispatch) => {
         console.log(documentId);
         dispatch(favoritesStart());
-        FirestoreService.updateFavorites(favoriteIds, documentId)
-            .then(response => {
+        FirestoreService.updateFavorites(favorites, documentId)
+            .then((response) => {
                 const updatedDocId = response.data.name.slice(59);
                 console.log(response.data.fields.favorites.arrayValue);
                 const values = response.data.fields.favorites.arrayValue.values;
-                let updatedFavIds = [];
+                let updatedFavs = [];
                 if (values) {
-                    updatedFavIds = values.map(id => {
-                        return id.integerValue;
+                    console.log(values);
+                    updatedFavs = values.map((fav) => {
+                        //return id.integerValue;
+                        return {
+                            id: fav.mapValue.fields.id.integerValue,
+                            rating: fav.mapValue.fields.rating.integerValue,
+                        };
                     });
                 }
-                dispatch(favoritesSuccess(updatedFavIds, updatedDocId));
+                dispatch(favoritesSuccess(updatedFavs, updatedDocId));
             })
-            .catch(err => {
+            .catch((err) => {
                 console.log(err);
                 dispatch(favoritesFail(err));
             });

@@ -44,3 +44,37 @@
         color: #222;
     }
 }
+
+.Rating {
+    font-size: 1.3rem;
+    background-color: #222;
+    color: #fff;
+
+    &:hover {
+        transform: translateX(0.4rem);
+        color: var(--color-primary);
+        background-color: #222;
+    }
+}
+
+.Remove {
+    margin-left: 1rem;
+    background-color: #ed5c5a;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.5rem;
+
+    &:hover {
+        background-color: #000;
+        transform: scale(1);
+    }
+}
+
+.Option {
+    font-size: 1.4rem;
+    padding: 0.4rem 0.8rem;
+
+    &:hover {
+        transform: scale(1);
+    }
+}

@@ -2,9 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Map from './Map/Map';
 import ContentService from '../../../../shared/services/contentService';
-
 import { testStores } from '../../../../shared/testData';
-
+import Button from '../../../UI/Button/Button';
 import classes from './StoreOverview.module.scss';
 import Spinner from '../../../UI/Spinner/Spinner';
 
@@ -18,12 +17,20 @@ const StoreOverview = (props) => {
         });
     }, [storeId]);
 
+    const handleGoBack = () => {
+        props.history.goBack();
+    };
+
     let renderedStore = <Spinner />;
     if (store) {
         const coordinates = store.address.gpsCoord.split(';');
         console.log(coordinates);
         renderedStore = (
             <>
+                <Button clicked={handleGoBack} btnType="Default">
+                    Tilbake
+                </Button>
+
                 <div className="heading-2">{store.storeName}</div>
                 <div className={classes.Store__container}>
                     <div className={classes.Store__map}>

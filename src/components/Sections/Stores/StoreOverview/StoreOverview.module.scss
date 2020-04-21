@@ -2,7 +2,14 @@
     grid-row: 2;
     grid-column: full-start / full-end;
     padding: 6rem 0;
+    position: relative;
     height: calc(84vh - 5rem);
+
+    & button {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+    }
 
     &__container {
         background-color: #222;

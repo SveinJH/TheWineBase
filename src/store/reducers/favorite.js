@@ -1,10 +1,10 @@
 import * as actionTypes from '../actions/actionTypes';
 
 const initialState = {
-    favoriteIds: [],
+    favs: [],
     error: null,
     loading: false,
-    documentId: null
+    documentId: null,
 };
 
 const favoritesStart = (state, action) => {
@@ -20,8 +20,8 @@ const favoritesSuccess = (state, action) => {
         ...state,
         loading: false,
         error: null,
-        favoriteIds: action.favoriteIds,
-        documentId: action.documentId
+        favs: action.favs,
+        documentId: action.documentId,
     };
 };
 

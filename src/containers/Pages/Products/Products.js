@@ -27,7 +27,7 @@ const Products = (props) => {
     const [products, setProducts] = useState();
     const [mainCategory, setMainCategory] = useState();
 
-    const { favoriteIds } = props;
+    const { favs } = props;
 
     useEffect(() => {
         /* ContentService.getProducts({ category: mainCategory }).then(
@@ -38,7 +38,8 @@ const Products = (props) => {
 
         const prods = [...testProducts];
         prods.forEach((prod) => {
-            if (favoriteIds.includes(prod.basic.productId)) {
+            const ids = favs.map((fav) => fav.id);
+            if (ids.includes(prod.basic.productId)) {
                 prod.basic.isFavorite = true;
             } else {
                 prod.basic.isFavorite = false;
@@ -46,7 +47,7 @@ const Products = (props) => {
         });
 
         setProducts(prods);
-    }, [mainCategory, favoriteIds]);
+    }, [mainCategory, favs]);
 
     const handleProductClicked = (id) => {
         props.history.push(`/produkter/${id}`);
@@ -128,7 +129,7 @@ const Products = (props) => {
 
 const mapStateToProps = (state) => {
     return {
-        favoriteIds: state.fav.favoriteIds,
+        favs: state.fav.favs,
     };
 };
 

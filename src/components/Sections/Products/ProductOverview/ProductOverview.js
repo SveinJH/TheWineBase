@@ -19,7 +19,7 @@ const ProductOverview = (props) => {
     const [product, setProduct] = useState();
     const [isFavorite, setIsFavorite] = useState(false);
 
-    const { favoriteIds, documentId, updateFavorites } = props;
+    const { favs, documentId, updateFavorites } = props;
 
     useEffect(() => {
         ContentService.getProduct(productId).then((response) => {
@@ -29,27 +29,29 @@ const ProductOverview = (props) => {
 
     useEffect(() => {
         if (product) {
-            if (favoriteIds.includes(product.basic.productId)) {
+            const ids = favs.map((fav) => fav.id);
+            if (ids.includes(product.basic.productId)) {
                 setIsFavorite(true);
             } else {
                 setIsFavorite(false);
             }
         }
-    }, [product, favoriteIds]);
+    }, [product, favs]);
 
     const handleGoBack = () => {
         props.history.goBack();
     };
 
     const addFavorite = (productId) => {
-        const updatedIds = [...favoriteIds];
-        updatedIds.push(productId);
-        return { ids: updatedIds, documentId };
+        const updatedFavs = [...favs];
+        updatedFavs.push({ id: productId, rating: '-1' });
+        console.log(updatedFavs);
+        return { favs: updatedFavs, documentId };
     };
 
     const removeFavorite = (productId) => {
-        const updatedIds = favoriteIds.filter((id) => id !== productId);
-        return { ids: updatedIds, documentId };
+        const updatedFavs = favs.filter((fav) => fav.id !== productId);
+        return { favs: updatedFavs, documentId };
     };
 
     let renderedProduct = (
@@ -139,7 +141,7 @@ const ProductOverview = (props) => {
 
 const mapStateToProps = (state) => {
     return {
-        favoriteIds: state.fav.favoriteIds,
+        favs: state.fav.favs,
         documentId: state.fav.documentId,
     };
 };
@@ -147,7 +149,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         updateFavorites: (data) =>
-            dispatch(actions.updateFavorites(data.ids, data.documentId)),
+            dispatch(actions.updateFavorites(data.favs, data.documentId)),
     };
 };
 

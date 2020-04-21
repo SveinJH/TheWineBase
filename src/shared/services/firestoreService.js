@@ -2,7 +2,7 @@ import { axiosFirestore } from '../axios';
 import * as queries from '../queries/firestoreQueries';
 
 class FirestoreService {
-    getFavorites = async email => {
+    getFavorites = async (email) => {
         const response = await axiosFirestore.post(
             `:runQuery`,
             queries.favorites(email)
@@ -11,7 +11,7 @@ class FirestoreService {
         return response;
     };
 
-    createUser = async email => {
+    createUser = async (email) => {
         const response = await axiosFirestore.post(
             `/users`,
             queries.createUser(email)
@@ -20,10 +20,12 @@ class FirestoreService {
         return response;
     };
 
-    updateFavorites = async (favoriteIds, documentId) => {
+    updateFavorites = async (favorites, documentId) => {
+        console.log('got req');
+        console.log(favorites);
         const response = await axiosFirestore.patch(
             `/users/${documentId}?updateMask.fieldPaths=favorites`,
-            queries.updateFavorites(favoriteIds)
+            queries.updateFavorites(favorites)
         );
         console.log(response);
         return response;

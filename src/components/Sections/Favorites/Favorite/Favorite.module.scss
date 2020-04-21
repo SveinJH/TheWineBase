@@ -40,6 +40,20 @@
         margin-right: 0.6rem;
     }
 
+    &__ratings {
+        margin-top: 1.4rem;
+        display: flex;
+
+        & button {
+            align-self: center;
+        }
+    }
+
+    &__options {
+        margin-top: 1.5rem;
+        display: flex;
+    }
+
     &__rating {
         margin-top: 1.2rem;
         color: var(--color-primary);

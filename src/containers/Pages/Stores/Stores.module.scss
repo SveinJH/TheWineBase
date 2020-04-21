@@ -7,7 +7,11 @@
         display: flex;
         flex-flow: column;
         align-items: center;
-        margin: 2rem 0 4rem;
+        margin: 2rem 0;
+
+        div {
+            margin: 2rem;
+        }
     }
 
     &__container {

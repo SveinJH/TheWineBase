@@ -18,7 +18,8 @@ export const testProducts = [
             introductionDate: '2015-01-09',
             productStatusSaleId: '12',
             productStatusSaleName: 'Midlertidig utsolgt',
-            productStatusSaleValidFrom: '2019-11-08'
+            productStatusSaleValidFrom: '2019-11-08',
+            rating: 7,
         },
         logistics: {
             wholesalerId: '30519',
@@ -31,12 +32,12 @@ export const testProducts = [
             barcodes: [
                 {
                     gtin: '7090035092012',
-                    isMainGtin: true
-                }
+                    isMainGtin: true,
+                },
             ],
             orderPack: 'D06',
             minimumOrderQuantity: 6.0,
-            packagingWeight: 0
+            packagingWeight: 0,
         },
         origins: {
             origin: {
@@ -45,16 +46,16 @@ export const testProducts = [
                 regionId: '12',
                 region: 'Piemonte',
                 subRegionId: '01',
-                subRegion: 'Alba'
+                subRegion: 'Alba',
             },
             production: {
                 countryId: '',
                 country: '',
                 regionId: '',
-                region: ''
+                region: '',
             },
             localQualityClassifId: '7',
-            localQualityClassif: 'DOCG'
+            localQualityClassif: 'DOCG',
         },
         properties: {
             ecoLabellingId: '',
@@ -71,7 +72,7 @@ export const testProducts = [
             locallyProduced: false,
             noAddedSulphur: false,
             environmentallySmart: false,
-            productionMethodStorage: ''
+            productionMethodStorage: '',
         },
         classification: {
             mainProductTypeId: '1',
@@ -81,26 +82,26 @@ export const testProducts = [
             productTypeId: '10701',
             productTypeName: 'Rødvin',
             productGroupId: '23',
-            productGroupName: 'Rødvin < 9 g sukker per liter'
+            productGroupName: 'Rødvin < 9 g sukker per liter',
         },
         ingredients: {
             grapes: [
                 {
                     grapeId: '112',
                     grapeDesc: 'Dolcetto',
-                    grapePct: 100
-                }
+                    grapePct: 100,
+                },
             ],
             ingredients: '',
             sugar: '< 3',
-            acid: '6,0'
+            acid: '6,0',
         },
         description: {
             characteristics: {
                 colour: 'Rubinrød.',
                 odour: 'Kirsebær, tobakk, rose.',
                 taste:
-                    'Røde skogsfrukter, tørr og fyldig, rund, avslutning med mandel.'
+                    'Røde skogsfrukter, tørr og fyldig, rund, avslutning med mandel.',
             },
             freshness: '09',
             fullness: '05',
@@ -110,37 +111,37 @@ export const testProducts = [
             recommendedFood: [
                 {
                     foodId: 'D',
-                    foodDesc: 'Lyst kjøtt'
+                    foodDesc: 'Lyst kjøtt',
                 },
                 {
                     foodId: 'L',
-                    foodDesc: 'Ost'
+                    foodDesc: 'Ost',
                 },
                 {
                     foodId: 'Q',
-                    foodDesc: 'Svinekjøtt'
-                }
-            ]
+                    foodDesc: 'Svinekjøtt',
+                },
+            ],
         },
         assortment: {
             assortmentId: '15',
             assortment: 'Bestillingsutvalget',
             validFrom: '2015-01-09',
             listedFrom: '2014-01-23',
-            assortmentGrade: ''
+            assortmentGrade: '',
         },
         prices: [
             {
                 priceValidFrom: '2020-01-01',
                 salesPrice: 165.1,
                 salesPricePrLiter: 220.13,
-                bottleReturnValue: 0
-            }
+                bottleReturnValue: 0,
+            },
         ],
         lastChanged: {
             date: '2020-01-09',
-            time: '04:03:16'
-        }
+            time: '04:03:16',
+        },
     },
     {
         basic: {
@@ -161,7 +162,7 @@ export const testProducts = [
             introductionDate: '2014-03-07',
             productStatusSaleId: '',
             productStatusSaleName: '',
-            productStatusSaleValidFrom: '0000-00-00'
+            productStatusSaleValidFrom: '0000-00-00',
         },
         logistics: {
             wholesalerId: '30023',
@@ -174,12 +175,12 @@ export const testProducts = [
             barcodes: [
                 {
                     gtin: '8007880140200',
-                    isMainGtin: true
-                }
+                    isMainGtin: true,
+                },
             ],
             orderPack: 'D06',
             minimumOrderQuantity: 6.0,
-            packagingWeight: 0
+            packagingWeight: 0,
         },
         origins: {
             origin: {
@@ -188,16 +189,16 @@ export const testProducts = [
                 regionId: '20',
                 region: 'Veneto',
                 subRegionId: '00',
-                subRegion: 'Øvrige'
+                subRegion: 'Øvrige',
             },
             production: {
                 countryId: '',
                 country: '',
                 regionId: '',
-                region: ''
+                region: '',
             },
             localQualityClassifId: '3',
-            localQualityClassif: 'IGT'
+            localQualityClassif: 'IGT',
         },
         properties: {
             ecoLabellingId: '',
@@ -215,7 +216,7 @@ export const testProducts = [
             noAddedSulphur: false,
             environmentallySmart: false,
             productionMethodStorage:
-                'Druene tørkes i 1 md. Druetypene gjæres i ståltank hver for seg ved 25- 28 grader i 30 dg. 3 md lagring.'
+                'Druene tørkes i 1 md. Druetypene gjæres i ståltank hver for seg ved 25- 28 grader i 30 dg. 3 md lagring.',
         },
         classification: {
             mainProductTypeId: '1',
@@ -225,36 +226,36 @@ export const testProducts = [
             productTypeId: '10701',
             productTypeName: 'Rødvin',
             productGroupId: '120',
-            productGroupName: 'Rødvin mellom 9 og 45 g sukker per liter'
+            productGroupName: 'Rødvin mellom 9 og 45 g sukker per liter',
         },
         ingredients: {
             grapes: [
                 {
                     grapeId: '098',
                     grapeDesc: 'Corvina',
-                    grapePct: 30
+                    grapePct: 30,
                 },
                 {
                     grapeId: '105',
                     grapeDesc: 'Croatina',
-                    grapePct: 30
+                    grapePct: 30,
                 },
                 {
                     grapeId: '211',
                     grapeDesc: 'Merlot',
-                    grapePct: 40
-                }
+                    grapePct: 40,
+                },
             ],
             ingredients: '',
             sugar: '11',
-            acid: '5,5'
+            acid: '5,5',
         },
         description: {
             characteristics: {
                 colour: 'Tett mørk rød.',
                 odour: 'Mørke bær og kryddertoner.',
                 taste:
-                    'Middels fyldig. Fin balanse mellom fruktighet og friskhet. Saftig og fast.'
+                    'Middels fyldig. Fin balanse mellom fruktighet og friskhet. Saftig og fast.',
             },
             freshness: '06',
             fullness: '07',
@@ -264,37 +265,37 @@ export const testProducts = [
             recommendedFood: [
                 {
                     foodId: 'D',
-                    foodDesc: 'Lyst kjøtt'
+                    foodDesc: 'Lyst kjøtt',
                 },
                 {
                     foodId: 'E',
-                    foodDesc: 'Storfe'
+                    foodDesc: 'Storfe',
                 },
                 {
                     foodId: 'Q',
-                    foodDesc: 'Svinekjøtt'
-                }
-            ]
+                    foodDesc: 'Svinekjøtt',
+                },
+            ],
         },
         assortment: {
             assortmentId: '15',
             assortment: 'Bestillingsutvalget',
             validFrom: '2014-03-07',
             listedFrom: '2014-01-23',
-            assortmentGrade: ''
+            assortmentGrade: '',
         },
         prices: [
             {
                 priceValidFrom: '2020-01-01',
                 salesPrice: 159.9,
                 salesPricePrLiter: 213.2,
-                bottleReturnValue: 0
-            }
+                bottleReturnValue: 0,
+            },
         ],
         lastChanged: {
             date: '2020-01-09',
-            time: '04:03:16'
-        }
+            time: '04:03:16',
+        },
     },
     {
         basic: {
@@ -315,7 +316,7 @@ export const testProducts = [
             introductionDate: '2015-01-09',
             productStatusSaleId: '',
             productStatusSaleName: '',
-            productStatusSaleValidFrom: '0000-00-00'
+            productStatusSaleValidFrom: '0000-00-00',
         },
         logistics: {
             wholesalerId: '30519',
@@ -328,12 +329,12 @@ export const testProducts = [
             barcodes: [
                 {
                     gtin: '7090035092029',
-                    isMainGtin: true
-                }
+                    isMainGtin: true,
+                },
             ],
             orderPack: 'D06',
             minimumOrderQuantity: 6.0,
-            packagingWeight: 0
+            packagingWeight: 0,
         },
         origins: {
             origin: {
@@ -342,16 +343,16 @@ export const testProducts = [
                 regionId: '12',
                 region: 'Piemonte',
                 subRegionId: '02',
-                subRegion: 'Asti'
+                subRegion: 'Asti',
             },
             production: {
                 countryId: '',
                 country: '',
                 regionId: '',
-                region: ''
+                region: '',
             },
             localQualityClassifId: '7',
-            localQualityClassif: 'DOCG'
+            localQualityClassif: 'DOCG',
         },
         properties: {
             ecoLabellingId: '',
@@ -368,7 +369,7 @@ export const testProducts = [
             locallyProduced: false,
             noAddedSulphur: false,
             environmentallySmart: false,
-            productionMethodStorage: ''
+            productionMethodStorage: '',
         },
         classification: {
             mainProductTypeId: '1',
@@ -378,25 +379,25 @@ export const testProducts = [
             productTypeId: '10701',
             productTypeName: 'Rødvin',
             productGroupId: '23',
-            productGroupName: 'Rødvin < 9 g sukker per liter'
+            productGroupName: 'Rødvin < 9 g sukker per liter',
         },
         ingredients: {
             grapes: [
                 {
                     grapeId: '041',
                     grapeDesc: 'Barbera',
-                    grapePct: 100
-                }
+                    grapePct: 100,
+                },
             ],
             ingredients: '',
             sugar: '< 3',
-            acid: '6,2'
+            acid: '6,2',
         },
         description: {
             characteristics: {
                 colour: 'Rubinrød.',
                 odour: 'Vårblomster og bær.',
-                taste: 'Tørr, fyldig og balansert.'
+                taste: 'Tørr, fyldig og balansert.',
             },
             freshness: '07',
             fullness: '09',
@@ -406,37 +407,37 @@ export const testProducts = [
             recommendedFood: [
                 {
                     foodId: 'D',
-                    foodDesc: 'Lyst kjøtt'
+                    foodDesc: 'Lyst kjøtt',
                 },
                 {
                     foodId: 'L',
-                    foodDesc: 'Ost'
+                    foodDesc: 'Ost',
                 },
                 {
                     foodId: 'Q',
-                    foodDesc: 'Svinekjøtt'
-                }
-            ]
+                    foodDesc: 'Svinekjøtt',
+                },
+            ],
         },
         assortment: {
             assortmentId: '15',
             assortment: 'Bestillingsutvalget',
             validFrom: '2015-01-09',
             listedFrom: '2014-01-24',
-            assortmentGrade: ''
+            assortmentGrade: '',
         },
         prices: [
             {
                 priceValidFrom: '2020-01-01',
                 salesPrice: 166.4,
                 salesPricePrLiter: 221.87,
-                bottleReturnValue: 0
-            }
+                bottleReturnValue: 0,
+            },
         ],
         lastChanged: {
             date: '2020-01-09',
-            time: '04:03:16'
-        }
+            time: '04:03:16',
+        },
     },
     {
         basic: {
@@ -457,7 +458,7 @@ export const testProducts = [
             introductionDate: '2015-01-09',
             productStatusSaleId: '10',
             productStatusSaleName: 'Midlertidig utsolgt',
-            productStatusSaleValidFrom: '2019-11-27'
+            productStatusSaleValidFrom: '2019-11-27',
         },
         logistics: {
             wholesalerId: '30519',
@@ -470,12 +471,12 @@ export const testProducts = [
             barcodes: [
                 {
                     gtin: '7090035092036',
-                    isMainGtin: true
-                }
+                    isMainGtin: true,
+                },
             ],
             orderPack: 'D06',
             minimumOrderQuantity: 6.0,
-            packagingWeight: 0
+            packagingWeight: 0,
         },
         origins: {
             origin: {
@@ -484,16 +485,16 @@ export const testProducts = [
                 regionId: '12',
                 region: 'Piemonte',
                 subRegionId: '01',
-                subRegion: 'Alba'
+                subRegion: 'Alba',
             },
             production: {
                 countryId: '',
                 country: '',
                 regionId: '',
-                region: ''
+                region: '',
             },
             localQualityClassifId: '7',
-            localQualityClassif: 'DOCG'
+            localQualityClassif: 'DOCG',
         },
         properties: {
             ecoLabellingId: '',
@@ -510,7 +511,7 @@ export const testProducts = [
             locallyProduced: false,
             noAddedSulphur: false,
             environmentallySmart: false,
-            productionMethodStorage: ''
+            productionMethodStorage: '',
         },
         classification: {
             mainProductTypeId: '1',
@@ -520,25 +521,25 @@ export const testProducts = [
             productTypeId: '10301',
             productTypeName: 'Hvitvin',
             productGroupId: '25',
-            productGroupName: 'Hvitvin < 9 g sukker per liter'
+            productGroupName: 'Hvitvin < 9 g sukker per liter',
         },
         ingredients: {
             grapes: [
                 {
                     grapeId: '025',
                     grapeDesc: 'Arneis',
-                    grapePct: 100
-                }
+                    grapePct: 100,
+                },
             ],
             ingredients: '',
             sugar: '< 3',
-            acid: '6,5'
+            acid: '6,5',
         },
         description: {
             characteristics: {
                 colour: 'Lys strågul, hint av grønt.',
                 odour: 'Hvite blomster, hvit frukt, og urter.',
-                taste: 'Tørr, med lang ettersmak.'
+                taste: 'Tørr, med lang ettersmak.',
             },
             freshness: '07',
             fullness: '05',
@@ -548,37 +549,37 @@ export const testProducts = [
             recommendedFood: [
                 {
                     foodId: 'A',
-                    foodDesc: 'Aperitiff/avec'
+                    foodDesc: 'Aperitiff/avec',
                 },
                 {
                     foodId: 'C',
-                    foodDesc: 'Fisk'
+                    foodDesc: 'Fisk',
                 },
                 {
                     foodId: 'L',
-                    foodDesc: 'Ost'
-                }
-            ]
+                    foodDesc: 'Ost',
+                },
+            ],
         },
         assortment: {
             assortmentId: '15',
             assortment: 'Bestillingsutvalget',
             validFrom: '2015-01-09',
             listedFrom: '2014-01-24',
-            assortmentGrade: ''
+            assortmentGrade: '',
         },
         prices: [
             {
                 priceValidFrom: '2020-01-01',
                 salesPrice: 152.3,
                 salesPricePrLiter: 203.07,
-                bottleReturnValue: 0
-            }
+                bottleReturnValue: 0,
+            },
         ],
         lastChanged: {
             date: '2020-01-09',
-            time: '04:03:16'
-        }
+            time: '04:03:16',
+        },
     },
     {
         basic: {
@@ -599,7 +600,7 @@ export const testProducts = [
             introductionDate: '2018-05-04',
             productStatusSaleId: '',
             productStatusSaleName: '',
-            productStatusSaleValidFrom: '0000-00-00'
+            productStatusSaleValidFrom: '0000-00-00',
         },
         logistics: {
             wholesalerId: '30519',
@@ -612,12 +613,12 @@ export const testProducts = [
             barcodes: [
                 {
                     gtin: '7090035092067',
-                    isMainGtin: true
-                }
+                    isMainGtin: true,
+                },
             ],
             orderPack: 'D06',
             minimumOrderQuantity: 6.0,
-            packagingWeight: 550.0
+            packagingWeight: 550.0,
         },
         origins: {
             origin: {
@@ -626,16 +627,16 @@ export const testProducts = [
                 regionId: '12',
                 region: 'Piemonte',
                 subRegionId: '03',
-                subRegion: 'Barbaresco'
+                subRegion: 'Barbaresco',
             },
             production: {
                 countryId: '',
                 country: '',
                 regionId: '',
-                region: ''
+                region: '',
             },
             localQualityClassifId: '7',
-            localQualityClassif: 'DOCG'
+            localQualityClassif: 'DOCG',
         },
         properties: {
             ecoLabellingId: '',
@@ -652,7 +653,7 @@ export const testProducts = [
             locallyProduced: false,
             noAddedSulphur: false,
             environmentallySmart: false,
-            productionMethodStorage: ''
+            productionMethodStorage: '',
         },
         classification: {
             mainProductTypeId: '1',
@@ -662,25 +663,25 @@ export const testProducts = [
             productTypeId: '10701',
             productTypeName: 'Rødvin',
             productGroupId: '23',
-            productGroupName: 'Rødvin < 9 g sukker per liter'
+            productGroupName: 'Rødvin < 9 g sukker per liter',
         },
         ingredients: {
             grapes: [
                 {
                     grapeId: '238',
                     grapeDesc: 'Nebbiolo',
-                    grapePct: 100
-                }
+                    grapePct: 100,
+                },
             ],
             ingredients: '',
             sugar: '< 3',
-            acid: '5,8'
+            acid: '5,8',
         },
         description: {
             characteristics: {
                 colour: 'Rubinrød.',
                 odour: 'Modne røde frukter, blåbær og rips.',
-                taste: 'Fyldig og tanninrik, lang ettersmak.'
+                taste: 'Fyldig og tanninrik, lang ettersmak.',
             },
             freshness: '08',
             fullness: '09',
@@ -690,37 +691,37 @@ export const testProducts = [
             recommendedFood: [
                 {
                     foodId: 'E',
-                    foodDesc: 'Storfe'
+                    foodDesc: 'Storfe',
                 },
                 {
                     foodId: 'F',
-                    foodDesc: 'Lam og sau'
+                    foodDesc: 'Lam og sau',
                 },
                 {
                     foodId: 'H',
-                    foodDesc: 'Storvilt'
-                }
-            ]
+                    foodDesc: 'Storvilt',
+                },
+            ],
         },
         assortment: {
             assortmentId: '15',
             assortment: 'Bestillingsutvalget',
             validFrom: '2018-05-04',
             listedFrom: '2014-06-17',
-            assortmentGrade: ''
+            assortmentGrade: '',
         },
         prices: [
             {
                 priceValidFrom: '2020-01-01',
                 salesPrice: 429.3,
                 salesPricePrLiter: 572.4,
-                bottleReturnValue: 0
-            }
+                bottleReturnValue: 0,
+            },
         ],
         lastChanged: {
             date: '2020-01-09',
-            time: '04:03:16'
-        }
+            time: '04:03:16',
+        },
     },
     {
         basic: {
@@ -741,7 +742,7 @@ export const testProducts = [
             introductionDate: '2018-01-12',
             productStatusSaleId: '',
             productStatusSaleName: '',
-            productStatusSaleValidFrom: '0000-00-00'
+            productStatusSaleValidFrom: '0000-00-00',
         },
         logistics: {
             wholesalerId: '30056',
@@ -754,12 +755,12 @@ export const testProducts = [
             barcodes: [
                 {
                     gtin: '9414008111001',
-                    isMainGtin: true
-                }
+                    isMainGtin: true,
+                },
             ],
             orderPack: 'D06',
             minimumOrderQuantity: 6.0,
-            packagingWeight: 420.0
+            packagingWeight: 420.0,
         },
         origins: {
             origin: {
@@ -768,16 +769,16 @@ export const testProducts = [
                 regionId: '08',
                 region: 'Nelson',
                 subRegionId: '00',
-                subRegion: ''
+                subRegion: '',
             },
             production: {
                 countryId: '',
                 country: '',
                 regionId: '',
-                region: ''
+                region: '',
             },
             localQualityClassifId: '',
-            localQualityClassif: ''
+            localQualityClassif: '',
         },
         properties: {
             ecoLabellingId: '',
@@ -794,7 +795,7 @@ export const testProducts = [
             locallyProduced: false,
             noAddedSulphur: false,
             environmentallySmart: false,
-            productionMethodStorage: ''
+            productionMethodStorage: '',
         },
         classification: {
             mainProductTypeId: '1',
@@ -804,26 +805,26 @@ export const testProducts = [
             productTypeId: '10301',
             productTypeName: 'Hvitvin',
             productGroupId: '25',
-            productGroupName: 'Hvitvin < 9 g sukker per liter'
+            productGroupName: 'Hvitvin < 9 g sukker per liter',
         },
         ingredients: {
             grapes: [
                 {
                     grapeId: '298',
                     grapeDesc: 'Riesling',
-                    grapePct: 100
-                }
+                    grapePct: 100,
+                },
             ],
             ingredients: '',
             sugar: '7,1',
-            acid: '6,2'
+            acid: '6,2',
         },
         description: {
             characteristics: {
                 colour: 'Strågul.',
                 odour: 'Floral med innslag av lime, mineraler og bivoks.',
                 taste:
-                    'Halvtørr, konsentrert og fruktig med hint av mineraler. Lang avslutning.'
+                    'Halvtørr, konsentrert og fruktig med hint av mineraler. Lang avslutning.',
             },
             freshness: '09',
             fullness: '06',
@@ -833,37 +834,37 @@ export const testProducts = [
             recommendedFood: [
                 {
                     foodId: 'A',
-                    foodDesc: 'Aperitiff/avec'
+                    foodDesc: 'Aperitiff/avec',
                 },
                 {
                     foodId: 'D',
-                    foodDesc: 'Lyst kjøtt'
+                    foodDesc: 'Lyst kjøtt',
                 },
                 {
                     foodId: 'Q',
-                    foodDesc: 'Svinekjøtt'
-                }
-            ]
+                    foodDesc: 'Svinekjøtt',
+                },
+            ],
         },
         assortment: {
             assortmentId: '15',
             assortment: 'Bestillingsutvalget',
             validFrom: '2018-01-12',
             listedFrom: '2014-01-27',
-            assortmentGrade: ''
+            assortmentGrade: '',
         },
         prices: [
             {
                 priceValidFrom: '2020-01-01',
                 salesPrice: 209.9,
                 salesPricePrLiter: 279.87,
-                bottleReturnValue: 0
-            }
+                bottleReturnValue: 0,
+            },
         ],
         lastChanged: {
             date: '2020-01-09',
-            time: '04:03:16'
-        }
+            time: '04:03:16',
+        },
     },
     {
         basic: {
@@ -884,7 +885,7 @@ export const testProducts = [
             introductionDate: '2018-07-06',
             productStatusSaleId: '',
             productStatusSaleName: '',
-            productStatusSaleValidFrom: '0000-00-00'
+            productStatusSaleValidFrom: '0000-00-00',
         },
         logistics: {
             wholesalerId: '30117',
@@ -897,12 +898,12 @@ export const testProducts = [
             barcodes: [
                 {
                     gtin: '6009879665031',
-                    isMainGtin: true
-                }
+                    isMainGtin: true,
+                },
             ],
             orderPack: 'D06',
             minimumOrderQuantity: 6.0,
-            packagingWeight: 450.0
+            packagingWeight: 450.0,
         },
         origins: {
             origin: {
@@ -911,16 +912,16 @@ export const testProducts = [
                 regionId: '15',
                 region: 'Robertson',
                 subRegionId: '00',
-                subRegion: 'Øvrige'
+                subRegion: 'Øvrige',
             },
             production: {
                 countryId: '',
                 country: '',
                 regionId: '',
-                region: ''
+                region: '',
             },
             localQualityClassifId: '',
-            localQualityClassif: ''
+            localQualityClassif: '',
         },
         properties: {
             ecoLabellingId: '',
@@ -937,7 +938,7 @@ export const testProducts = [
             locallyProduced: false,
             noAddedSulphur: false,
             environmentallySmart: false,
-            productionMethodStorage: ''
+            productionMethodStorage: '',
         },
         classification: {
             mainProductTypeId: '1',
@@ -947,19 +948,19 @@ export const testProducts = [
             productTypeId: '10301',
             productTypeName: 'Hvitvin',
             productGroupId: '25',
-            productGroupName: 'Hvitvin < 9 g sukker per liter'
+            productGroupName: 'Hvitvin < 9 g sukker per liter',
         },
         ingredients: {
             grapes: [
                 {
                     grapeId: '088',
                     grapeDesc: 'Chardonnay',
-                    grapePct: 100
-                }
+                    grapePct: 100,
+                },
             ],
             ingredients: '',
             sugar: '< 3',
-            acid: '5,6'
+            acid: '5,6',
         },
         description: {
             characteristics: {
@@ -967,7 +968,7 @@ export const testProducts = [
                 odour:
                     'Friskt og solmodent fruktpreg. Ren stil, med innslag av pære, epler og eksotiske frukter.',
                 taste:
-                    'God fylde og fedme som balanseres av syrefriskhet. Mineralsk og fast avslutning.'
+                    'God fylde og fedme som balanseres av syrefriskhet. Mineralsk og fast avslutning.',
             },
             freshness: '08',
             fullness: '07',
@@ -977,37 +978,37 @@ export const testProducts = [
             recommendedFood: [
                 {
                     foodId: 'B',
-                    foodDesc: 'Skalldyr'
+                    foodDesc: 'Skalldyr',
                 },
                 {
                     foodId: 'C',
-                    foodDesc: 'Fisk'
+                    foodDesc: 'Fisk',
                 },
                 {
                     foodId: 'R',
-                    foodDesc: 'Grønnsaker'
-                }
-            ]
+                    foodDesc: 'Grønnsaker',
+                },
+            ],
         },
         assortment: {
             assortmentId: '15',
             assortment: 'Bestillingsutvalget',
             validFrom: '2018-07-06',
             listedFrom: '2014-01-27',
-            assortmentGrade: ''
+            assortmentGrade: '',
         },
         prices: [
             {
                 priceValidFrom: '2020-01-01',
                 salesPrice: 177.5,
                 salesPricePrLiter: 236.67,
-                bottleReturnValue: 0
-            }
+                bottleReturnValue: 0,
+            },
         ],
         lastChanged: {
             date: '2020-02-05',
-            time: '05:32:31'
-        }
+            time: '05:32:31',
+        },
     },
     {
         basic: {
@@ -1028,7 +1029,7 @@ export const testProducts = [
             introductionDate: '2014-05-02',
             productStatusSaleId: '',
             productStatusSaleName: '',
-            productStatusSaleValidFrom: '0000-00-00'
+            productStatusSaleValidFrom: '0000-00-00',
         },
         logistics: {
             wholesalerId: '30360',
@@ -1041,12 +1042,12 @@ export const testProducts = [
             barcodes: [
                 {
                     gtin: '3444970000061',
-                    isMainGtin: true
-                }
+                    isMainGtin: true,
+                },
             ],
             orderPack: 'D06',
             minimumOrderQuantity: 6.0,
-            packagingWeight: 0
+            packagingWeight: 0,
         },
         origins: {
             origin: {
@@ -1055,16 +1056,16 @@ export const testProducts = [
                 regionId: '06',
                 region: 'Champagne',
                 subRegionId: '00',
-                subRegion: 'Øvrige'
+                subRegion: 'Øvrige',
             },
             production: {
                 countryId: '',
                 country: '',
                 regionId: '',
-                region: ''
+                region: '',
             },
             localQualityClassifId: '4',
-            localQualityClassif: 'AOC'
+            localQualityClassif: 'AOC',
         },
         properties: {
             ecoLabellingId: '',
@@ -1081,7 +1082,7 @@ export const testProducts = [
             locallyProduced: false,
             noAddedSulphur: false,
             environmentallySmart: false,
-            productionMethodStorage: ''
+            productionMethodStorage: '',
         },
         classification: {
             mainProductTypeId: '1',
@@ -1091,30 +1092,30 @@ export const testProducts = [
             productTypeId: '10504',
             productTypeName: 'Champagne, brut',
             productGroupId: '28',
-            productGroupName: 'Musserende vin < 12 g sukker per liter'
+            productGroupName: 'Musserende vin < 12 g sukker per liter',
         },
         ingredients: {
             grapes: [
                 {
                     grapeId: '088',
                     grapeDesc: 'Chardonnay',
-                    grapePct: 20
+                    grapePct: 20,
                 },
                 {
                     grapeId: '279',
                     grapeDesc: 'Pinot Noir',
-                    grapePct: 80
-                }
+                    grapePct: 80,
+                },
             ],
             ingredients: '',
             sugar: '8',
-            acid: '5,1'
+            acid: '5,1',
         },
         description: {
             characteristics: {
                 colour: 'Gyllen.',
                 odour: 'Intens. Moden frukt.',
-                taste: 'Balansert og rund, med frisk syre.'
+                taste: 'Balansert og rund, med frisk syre.',
             },
             freshness: '10',
             fullness: '08',
@@ -1124,33 +1125,33 @@ export const testProducts = [
             recommendedFood: [
                 {
                     foodId: 'A',
-                    foodDesc: 'Aperitiff/avec'
+                    foodDesc: 'Aperitiff/avec',
                 },
                 {
                     foodId: 'B',
-                    foodDesc: 'Skalldyr'
-                }
-            ]
+                    foodDesc: 'Skalldyr',
+                },
+            ],
         },
         assortment: {
             assortmentId: '15',
             assortment: 'Bestillingsutvalget',
             validFrom: '2014-05-02',
             listedFrom: '2014-01-27',
-            assortmentGrade: ''
+            assortmentGrade: '',
         },
         prices: [
             {
                 priceValidFrom: '2020-01-01',
                 salesPrice: 299.9,
                 salesPricePrLiter: 399.87,
-                bottleReturnValue: 0
-            }
+                bottleReturnValue: 0,
+            },
         ],
         lastChanged: {
             date: '2020-01-09',
-            time: '04:03:16'
-        }
+            time: '04:03:16',
+        },
     },
     {
         basic: {
@@ -1171,7 +1172,7 @@ export const testProducts = [
             introductionDate: '2016-04-27',
             productStatusSaleId: '10',
             productStatusSaleName: 'Midlertidig utsolgt',
-            productStatusSaleValidFrom: '2019-11-25'
+            productStatusSaleValidFrom: '2019-11-25',
         },
         logistics: {
             wholesalerId: '30850',
@@ -1184,12 +1185,12 @@ export const testProducts = [
             barcodes: [
                 {
                     gtin: '5603541751957',
-                    isMainGtin: true
-                }
+                    isMainGtin: true,
+                },
             ],
             orderPack: 'D06',
             minimumOrderQuantity: 6.0,
-            packagingWeight: 0
+            packagingWeight: 0,
         },
         origins: {
             origin: {
@@ -1198,16 +1199,16 @@ export const testProducts = [
                 regionId: '08',
                 region: 'Douro',
                 subRegionId: '00',
-                subRegion: 'Øvrige'
+                subRegion: 'Øvrige',
             },
             production: {
                 countryId: '',
                 country: '',
                 regionId: '',
-                region: ''
+                region: '',
             },
             localQualityClassifId: '',
-            localQualityClassif: ''
+            localQualityClassif: '',
         },
         properties: {
             ecoLabellingId: '',
@@ -1224,7 +1225,7 @@ export const testProducts = [
             locallyProduced: false,
             noAddedSulphur: false,
             environmentallySmart: false,
-            productionMethodStorage: ''
+            productionMethodStorage: '',
         },
         classification: {
             mainProductTypeId: '2',
@@ -1234,39 +1235,39 @@ export const testProducts = [
             productTypeId: '20301',
             productTypeName: 'Portvin',
             productGroupId: '32',
-            productGroupName: 'Portvin'
+            productGroupName: 'Portvin',
         },
         ingredients: {
             grapes: [
                 {
                     grapeId: '352',
                     grapeDesc: 'Tinta Barroca',
-                    grapePct: 20
+                    grapePct: 20,
                 },
                 {
                     grapeId: '357',
                     grapeDesc: 'Tinta Roriz',
-                    grapePct: 20
+                    grapePct: 20,
                 },
                 {
                     grapeId: '358',
                     grapeDesc: 'Tinto Cão',
-                    grapePct: 20
+                    grapePct: 20,
                 },
                 {
                     grapeId: '362',
                     grapeDesc: 'Touriga Franca',
-                    grapePct: 20
+                    grapePct: 20,
                 },
                 {
                     grapeId: '363',
                     grapeDesc: 'Touriga Nacional',
-                    grapePct: 20
-                }
+                    grapePct: 20,
+                },
             ],
             ingredients: '',
             sugar: '104',
-            acid: '5,5'
+            acid: '5,5',
         },
         description: {
             characteristics: {
@@ -1274,7 +1275,7 @@ export const testProducts = [
                 odour:
                     'Ung. Konsentrert preg av mørke bær, pepper og urter, innslag av fat.',
                 taste:
-                    'Ung og uutviklet. Fokusert preg av mørke bær, pepper og svale urter. Lang, fast ettersmak.'
+                    'Ung og uutviklet. Fokusert preg av mørke bær, pepper og svale urter. Lang, fast ettersmak.',
             },
             freshness: '08',
             fullness: '10',
@@ -1284,33 +1285,33 @@ export const testProducts = [
             recommendedFood: [
                 {
                     foodId: 'L',
-                    foodDesc: 'Ost'
+                    foodDesc: 'Ost',
                 },
                 {
                     foodId: 'N',
-                    foodDesc: 'Dessert, kake, frukt'
-                }
-            ]
+                    foodDesc: 'Dessert, kake, frukt',
+                },
+            ],
         },
         assortment: {
             assortmentId: '15',
             assortment: 'Bestillingsutvalget',
             validFrom: '2016-04-27',
             listedFrom: '2014-01-28',
-            assortmentGrade: ''
+            assortmentGrade: '',
         },
         prices: [
             {
                 priceValidFrom: '2020-01-01',
                 salesPrice: 649.9,
                 salesPricePrLiter: 866.53,
-                bottleReturnValue: 0
-            }
+                bottleReturnValue: 0,
+            },
         ],
         lastChanged: {
             date: '2020-01-09',
-            time: '04:03:16'
-        }
+            time: '04:03:16',
+        },
     },
     {
         basic: {
@@ -1331,7 +1332,7 @@ export const testProducts = [
             introductionDate: '2014-05-02',
             productStatusSaleId: '',
             productStatusSaleName: '',
-            productStatusSaleValidFrom: '0000-00-00'
+            productStatusSaleValidFrom: '0000-00-00',
         },
         logistics: {
             wholesalerId: '30056',
@@ -1344,12 +1345,12 @@ export const testProducts = [
             barcodes: [
                 {
                     gtin: '7804320319018',
-                    isMainGtin: true
-                }
+                    isMainGtin: true,
+                },
             ],
             orderPack: 'D06',
             minimumOrderQuantity: 6.0,
-            packagingWeight: 900.0
+            packagingWeight: 900.0,
         },
         origins: {
             origin: {
@@ -1358,16 +1359,16 @@ export const testProducts = [
                 regionId: '02',
                 region: 'Bío-Bío Valley',
                 subRegionId: '00',
-                subRegion: ''
+                subRegion: '',
             },
             production: {
                 countryId: '',
                 country: '',
                 regionId: '',
-                region: ''
+                region: '',
             },
             localQualityClassifId: '',
-            localQualityClassif: ''
+            localQualityClassif: '',
         },
         properties: {
             ecoLabellingId: '',
@@ -1384,7 +1385,7 @@ export const testProducts = [
             locallyProduced: false,
             noAddedSulphur: false,
             environmentallySmart: false,
-            productionMethodStorage: 'Produsert etter Charmat-metoden.'
+            productionMethodStorage: 'Produsert etter Charmat-metoden.',
         },
         classification: {
             mainProductTypeId: '1',
@@ -1394,31 +1395,31 @@ export const testProducts = [
             productTypeId: '10501',
             productTypeName: 'Musserende vin',
             productGroupId: '28',
-            productGroupName: 'Musserende vin < 12 g sukker per liter'
+            productGroupName: 'Musserende vin < 12 g sukker per liter',
         },
         ingredients: {
             grapes: [
                 {
                     grapeId: '088',
                     grapeDesc: 'Chardonnay',
-                    grapePct: 93
+                    grapePct: 93,
                 },
                 {
                     grapeId: '279',
                     grapeDesc: 'Pinot Noir',
-                    grapePct: 7
-                }
+                    grapePct: 7,
+                },
             ],
             ingredients: '',
             sugar: '10',
-            acid: '7'
+            acid: '7',
         },
         description: {
             characteristics: {
                 colour: 'Lys gul med hint av grønt.',
                 odour:
                     'Sitrus, hvite blomster, tørket frukt og lette anslag av honning.',
-                taste: 'Frisk og fruktig.'
+                taste: 'Frisk og fruktig.',
             },
             freshness: '08',
             fullness: '06',
@@ -1428,30 +1429,30 @@ export const testProducts = [
             recommendedFood: [
                 {
                     foodId: 'A',
-                    foodDesc: 'Aperitiff/avec'
-                }
-            ]
+                    foodDesc: 'Aperitiff/avec',
+                },
+            ],
         },
         assortment: {
             assortmentId: '15',
             assortment: 'Bestillingsutvalget',
             validFrom: '2014-05-02',
             listedFrom: '2014-01-29',
-            assortmentGrade: ''
+            assortmentGrade: '',
         },
         prices: [
             {
                 priceValidFrom: '2020-01-01',
                 salesPrice: 169.9,
                 salesPricePrLiter: 226.53,
-                bottleReturnValue: 0
-            }
+                bottleReturnValue: 0,
+            },
         ],
         lastChanged: {
             date: '2020-01-09',
-            time: '04:03:16'
-        }
-    }
+            time: '04:03:16',
+        },
+    },
 ];
 
 export const testStores = [
@@ -1465,7 +1466,7 @@ export const testStores = [
             city: 'Sandnes',
             gpsCoord: '58.876707;5.721903',
             globalLocationNumber: '7080003252630',
-            organisationNumber: '980548759'
+            organisationNumber: '980548759',
         },
         telephone: '22 01 50 00',
         email: 'kundesenter@vinmonopolet.no',
@@ -1476,51 +1477,51 @@ export const testStores = [
                     dayOfTheWeek: 'Monday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Tuesday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Wednesday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Thursday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Friday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Saturday',
                     openingTime: '10:00',
                     closingTime: '15:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Sunday',
                     openingTime: '',
                     closingTime: '',
-                    closed: true
-                }
+                    closed: true,
+                },
             ],
-            exceptionHours: []
+            exceptionHours: [],
         },
         lastChanged: {
             date: '2020-01-06',
-            time: '06:14:39'
-        }
+            time: '06:14:39',
+        },
     },
     {
         storeId: '152',
@@ -1532,7 +1533,7 @@ export const testStores = [
             city: 'Oslo',
             gpsCoord: '59.9384265;10.7684746',
             globalLocationNumber: '7080003252333',
-            organisationNumber: '873106972'
+            organisationNumber: '873106972',
         },
         telephone: '22 01 50 00',
         email: 'kundesenter@vinmonopolet.no',
@@ -1543,51 +1544,51 @@ export const testStores = [
                     dayOfTheWeek: 'Monday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Tuesday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Wednesday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Thursday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Friday',
                     openingTime: '09:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Saturday',
                     openingTime: '09:00',
                     closingTime: '15:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Sunday',
                     openingTime: '',
                     closingTime: '',
-                    closed: true
-                }
+                    closed: true,
+                },
             ],
-            exceptionHours: []
+            exceptionHours: [],
         },
         lastChanged: {
             date: '2020-01-06',
-            time: '06:14:39'
-        }
+            time: '06:14:39',
+        },
     },
     {
         storeId: '194',
@@ -1599,7 +1600,7 @@ export const testStores = [
             city: 'Sandvika',
             gpsCoord: '59.89284471;10.52303',
             globalLocationNumber: '7080001207571',
-            organisationNumber: '973107100'
+            organisationNumber: '973107100',
         },
         telephone: '22 01 50 00',
         email: 'kundesenter@vinmonopolet.no',
@@ -1610,51 +1611,51 @@ export const testStores = [
                     dayOfTheWeek: 'Monday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Tuesday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Wednesday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Thursday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Friday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Saturday',
                     openingTime: '10:00',
                     closingTime: '15:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Sunday',
                     openingTime: '',
                     closingTime: '',
-                    closed: true
-                }
+                    closed: true,
+                },
             ],
-            exceptionHours: []
+            exceptionHours: [],
         },
         lastChanged: {
             date: '2020-01-06',
-            time: '06:14:39'
-        }
+            time: '06:14:39',
+        },
     },
     {
         storeId: '241',
@@ -1666,7 +1667,7 @@ export const testStores = [
             city: 'Sandnes',
             gpsCoord: '58.8505109;5.7388721',
             globalLocationNumber: '7080003252647',
-            organisationNumber: '973107275'
+            organisationNumber: '973107275',
         },
         telephone: '22 01 50 00',
         email: 'kundesenter@vinmonopolet.no',
@@ -1677,51 +1678,51 @@ export const testStores = [
                     dayOfTheWeek: 'Monday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Tuesday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Wednesday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Thursday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Friday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Saturday',
                     openingTime: '10:00',
                     closingTime: '15:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Sunday',
                     openingTime: '',
                     closingTime: '',
-                    closed: true
-                }
+                    closed: true,
+                },
             ],
-            exceptionHours: []
+            exceptionHours: [],
         },
         lastChanged: {
             date: '2020-01-06',
-            time: '06:14:39'
-        }
+            time: '06:14:39',
+        },
     },
     {
         storeId: '253',
@@ -1733,7 +1734,7 @@ export const testStores = [
             city: 'Kristiansand S',
             gpsCoord: '58.1799;8.1333',
             globalLocationNumber: '7080003251770',
-            organisationNumber: '973107119'
+            organisationNumber: '973107119',
         },
         telephone: '22 01 50 00',
         email: 'kundesenter@vinmonopolet.no',
@@ -1744,51 +1745,51 @@ export const testStores = [
                     dayOfTheWeek: 'Monday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Tuesday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Wednesday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Thursday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Friday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Saturday',
                     openingTime: '10:00',
                     closingTime: '15:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Sunday',
                     openingTime: '',
                     closingTime: '',
-                    closed: true
-                }
+                    closed: true,
+                },
             ],
-            exceptionHours: []
+            exceptionHours: [],
         },
         lastChanged: {
             date: '2020-01-06',
-            time: '06:14:39'
-        }
+            time: '06:14:39',
+        },
     },
     {
         storeId: '254',
@@ -1800,7 +1801,7 @@ export const testStores = [
             city: 'Kristiansand S',
             gpsCoord: '58.1452;7.9915',
             globalLocationNumber: '7080003251763',
-            organisationNumber: '973106759'
+            organisationNumber: '973106759',
         },
         telephone: '22 01 50 00',
         email: 'kundesenter@vinmonopolet.no',
@@ -1811,51 +1812,51 @@ export const testStores = [
                     dayOfTheWeek: 'Monday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Tuesday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Wednesday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Thursday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Friday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Saturday',
                     openingTime: '10:00',
                     closingTime: '15:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Sunday',
                     openingTime: '',
                     closingTime: '',
-                    closed: true
-                }
+                    closed: true,
+                },
             ],
-            exceptionHours: []
+            exceptionHours: [],
         },
         lastChanged: {
             date: '2020-01-06',
-            time: '06:14:39'
-        }
+            time: '06:14:39',
+        },
     },
     {
         storeId: '268',
@@ -1867,7 +1868,7 @@ export const testStores = [
             city: 'Sandnessjøen',
             gpsCoord: '66.02200791; 12.6339',
             globalLocationNumber: '7080003252654',
-            organisationNumber: '873107162'
+            organisationNumber: '873107162',
         },
         telephone: '22 01 50 00',
         email: 'kundesenter@vinmonopolet.no',
@@ -1878,51 +1879,51 @@ export const testStores = [
                     dayOfTheWeek: 'Monday',
                     openingTime: '10:00',
                     closingTime: '17:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Tuesday',
                     openingTime: '10:00',
                     closingTime: '17:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Wednesday',
                     openingTime: '10:00',
                     closingTime: '17:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Thursday',
                     openingTime: '10:00',
                     closingTime: '17:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Friday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Saturday',
                     openingTime: '10:00',
                     closingTime: '15:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Sunday',
                     openingTime: '',
                     closingTime: '',
-                    closed: true
-                }
+                    closed: true,
+                },
             ],
-            exceptionHours: []
+            exceptionHours: [],
         },
         lastChanged: {
             date: '2020-01-06',
-            time: '06:14:39'
-        }
+            time: '06:14:39',
+        },
     },
     {
         storeId: '283',
@@ -1934,7 +1935,7 @@ export const testStores = [
             city: 'Sandefjord',
             gpsCoord: '59.1293529;10.2252665',
             globalLocationNumber: '7080003252623',
-            organisationNumber: '973106813'
+            organisationNumber: '973106813',
         },
         telephone: '22 01 50 00',
         email: 'kundesenter@vinmonopolet.no',
@@ -1945,51 +1946,51 @@ export const testStores = [
                     dayOfTheWeek: 'Monday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Tuesday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Wednesday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Thursday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Friday',
                     openingTime: '09:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Saturday',
                     openingTime: '09:00',
                     closingTime: '15:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Sunday',
                     openingTime: '',
                     closingTime: '',
-                    closed: true
-                }
+                    closed: true,
+                },
             ],
-            exceptionHours: []
+            exceptionHours: [],
         },
         lastChanged: {
             date: '2020-01-06',
-            time: '06:14:39'
-        }
+            time: '06:14:39',
+        },
     },
     {
         storeId: '306',
@@ -2001,7 +2002,7 @@ export const testStores = [
             city: 'Lillesand',
             gpsCoord: '58.249204;8.376206',
             globalLocationNumber: '7080003251893',
-            organisationNumber: '984584385'
+            organisationNumber: '984584385',
         },
         telephone: '22 01 50 00',
         email: 'kundesenter@vinmonopolet.no',
@@ -2012,51 +2013,51 @@ export const testStores = [
                     dayOfTheWeek: 'Monday',
                     openingTime: '10:00',
                     closingTime: '17:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Tuesday',
                     openingTime: '10:00',
                     closingTime: '17:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Wednesday',
                     openingTime: '10:00',
                     closingTime: '17:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Thursday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Friday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Saturday',
                     openingTime: '10:00',
                     closingTime: '15:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Sunday',
                     openingTime: '',
                     closingTime: '',
-                    closed: true
-                }
+                    closed: true,
+                },
             ],
-            exceptionHours: []
+            exceptionHours: [],
         },
         lastChanged: {
             date: '2020-01-06',
-            time: '06:14:39'
-        }
+            time: '06:14:39',
+        },
     },
     {
         storeId: '346',
@@ -2068,7 +2069,7 @@ export const testStores = [
             city: 'Sandane',
             gpsCoord: '61.7775637;6.2145905',
             globalLocationNumber: '7080003252616',
-            organisationNumber: '989672606'
+            organisationNumber: '989672606',
         },
         telephone: '22 01 50 00',
         email: 'kundesenter@vinmonopolet.no',
@@ -2079,51 +2080,51 @@ export const testStores = [
                     dayOfTheWeek: 'Monday',
                     openingTime: '',
                     closingTime: '',
-                    closed: true
+                    closed: true,
                 },
                 {
                     dayOfTheWeek: 'Tuesday',
                     openingTime: '11:00',
                     closingTime: '17:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Wednesday',
                     openingTime: '11:00',
                     closingTime: '17:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Thursday',
                     openingTime: '11:00',
                     closingTime: '17:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Friday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Saturday',
                     openingTime: '10:00',
                     closingTime: '15:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Sunday',
                     openingTime: '',
                     closingTime: '',
-                    closed: true
-                }
+                    closed: true,
+                },
             ],
-            exceptionHours: []
+            exceptionHours: [],
         },
         lastChanged: {
             date: '2020-01-06',
-            time: '06:14:39'
-        }
+            time: '06:14:39',
+        },
     },
     {
         storeId: '378',
@@ -2135,7 +2136,7 @@ export const testStores = [
             city: 'Sørumsand',
             gpsCoord: '59.98717;11.24458',
             globalLocationNumber: '7080003253125',
-            organisationNumber: '993208140'
+            organisationNumber: '993208140',
         },
         telephone: '22 01 50 00',
         email: 'kundesenter@vinmonopolet.no',
@@ -2146,51 +2147,51 @@ export const testStores = [
                     dayOfTheWeek: 'Monday',
                     openingTime: '12:00',
                     closingTime: '17:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Tuesday',
                     openingTime: '10:00',
                     closingTime: '17:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Wednesday',
                     openingTime: '10:00',
                     closingTime: '17:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Thursday',
                     openingTime: '10:00',
                     closingTime: '17:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Friday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Saturday',
                     openingTime: '10:00',
                     closingTime: '15:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Sunday',
                     openingTime: '',
                     closingTime: '',
-                    closed: true
-                }
+                    closed: true,
+                },
             ],
-            exceptionHours: []
+            exceptionHours: [],
         },
         lastChanged: {
             date: '2020-01-06',
-            time: '06:14:39'
-        }
+            time: '06:14:39',
+        },
     },
     {
         storeId: '386',
@@ -2202,7 +2203,7 @@ export const testStores = [
             city: 'Kristiansand S',
             gpsCoord: '58.1253;7.9526',
             globalLocationNumber: '7080001215385',
-            organisationNumber: '993873462'
+            organisationNumber: '993873462',
         },
         telephone: '22 01 50 00',
         email: 'kundesenter@vinmonopolet.no',
@@ -2213,51 +2214,51 @@ export const testStores = [
                     dayOfTheWeek: 'Monday',
                     openingTime: '10:00',
                     closingTime: '17:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Tuesday',
                     openingTime: '10:00',
                     closingTime: '17:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Wednesday',
                     openingTime: '10:00',
                     closingTime: '17:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Thursday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Friday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Saturday',
                     openingTime: '10:00',
                     closingTime: '15:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Sunday',
                     openingTime: '',
                     closingTime: '',
-                    closed: true
-                }
+                    closed: true,
+                },
             ],
-            exceptionHours: []
+            exceptionHours: [],
         },
         lastChanged: {
             date: '2020-01-06',
-            time: '06:14:39'
-        }
+            time: '06:14:39',
+        },
     },
     {
         storeId: '407',
@@ -2269,7 +2270,7 @@ export const testStores = [
             city: 'Sande I Vestfold',
             gpsCoord: '59.58743;10.20635',
             globalLocationNumber: '7080001253486',
-            organisationNumber: '897320142'
+            organisationNumber: '897320142',
         },
         telephone: '22 01 50 00',
         email: 'kundesenter@vinmonopolet.no',
@@ -2280,50 +2281,50 @@ export const testStores = [
                     dayOfTheWeek: 'Monday',
                     openingTime: '10:00',
                     closingTime: '17:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Tuesday',
                     openingTime: '10:00',
                     closingTime: '17:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Wednesday',
                     openingTime: '10:00',
                     closingTime: '17:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Thursday',
                     openingTime: '10:00',
                     closingTime: '17:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Friday',
                     openingTime: '10:00',
                     closingTime: '18:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Saturday',
                     openingTime: '10:00',
                     closingTime: '15:00',
-                    closed: false
+                    closed: false,
                 },
                 {
                     dayOfTheWeek: 'Sunday',
                     openingTime: '',
                     closingTime: '',
-                    closed: true
-                }
+                    closed: true,
+                },
             ],
-            exceptionHours: []
+            exceptionHours: [],
         },
         lastChanged: {
             date: '2020-01-06',
-            time: '06:14:39'
-        }
-    }
+            time: '06:14:39',
+        },
+    },
 ];
