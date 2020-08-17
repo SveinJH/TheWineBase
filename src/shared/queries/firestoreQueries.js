@@ -37,8 +37,6 @@ export const updateFavorites = (favorites) => {
         };
     });
 
-    console.log(favs);
-
     return {
         fields: {
             favorites: { arrayValue: { values: favs } },

@@ -51,16 +51,13 @@ export const getFavorites = (email) => {
 
 export const updateFavorites = (favorites, documentId) => {
     return (dispatch) => {
-        console.log(documentId);
         dispatch(favoritesStart());
         FirestoreService.updateFavorites(favorites, documentId)
             .then((response) => {
                 const updatedDocId = response.data.name.slice(59);
-                console.log(response.data.fields.favorites.arrayValue);
                 const values = response.data.fields.favorites.arrayValue.values;
                 let updatedFavs = [];
                 if (values) {
-                    console.log(values);
                     updatedFavs = values.map((fav) => {
                         //return id.integerValue;
                         return {
