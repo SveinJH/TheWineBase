@@ -9,46 +9,46 @@ import { checkValidity } from '../../../shared/utility';
 import login_image from '../../../images/login_img.svg';
 import Spinner from '../../../components/UI/Spinner/Spinner';
 
-const Login = props => {
+const Login = (props) => {
     const [inputFormData, setInputFormData] = useState({
         email: {
             elementType: 'input',
             elementConfig: {
                 type: 'email',
-                label: 'E-post'
+                label: 'E-post',
             },
             value: '',
             validation: {
                 email: true,
                 minLength: 3,
-                required: true
+                required: true,
             },
             valid: false,
-            touched: false
+            touched: false,
         },
         password: {
             elementType: 'input',
             elementConfig: {
                 type: 'password',
-                label: 'Passord'
+                label: 'Passord',
             },
             value: '',
             validation: {
                 minLength: 6,
-                required: true
+                required: true,
             },
             valid: false,
-            touched: false
-        }
+            touched: false,
+        },
     });
     const [isSignup, setIsSignup] = useState(false);
     const [validForm, setValidForm] = useState(false);
 
-    const submitHandler = event => {
+    const submitHandler = (event) => {
         event.preventDefault();
         const userData = {
             email: inputFormData.email.value,
-            password: inputFormData.password.value
+            password: inputFormData.password.value,
         };
 
         if (validForm && isSignup) {
@@ -68,8 +68,8 @@ const Login = props => {
                     event.target.value,
                     inputFormData[controlName].validation
                 ),
-                touched: true
-            }
+                touched: true,
+            },
         };
 
         let formIsValid = true;
@@ -81,14 +81,14 @@ const Login = props => {
         setValidForm(formIsValid);
     };
 
-    const formElements = Object.keys(inputFormData).map(el => {
+    const formElements = Object.keys(inputFormData).map((el) => {
         return {
             id: el,
-            config: inputFormData[el]
+            config: inputFormData[el],
         };
     });
 
-    let form = formElements.map(formElement => {
+    let form = formElements.map((formElement) => {
         return (
             <Input
                 key={formElement.id}
@@ -98,7 +98,7 @@ const Login = props => {
                 invalid={!formElement.config.valid}
                 shouldValidate={formElement.config.validation}
                 touched={formElement.config.touched}
-                changed={event => inputChangedHandler(event, formElement.id)}
+                changed={(event) => inputChangedHandler(event, formElement.id)}
             />
         );
     });
@@ -142,23 +142,29 @@ const Login = props => {
                         </span>
                     </div>
                 )}
+                <div className={classes.Disclaimer}>
+                    <br />
+                    <br />
+                    Denne nettsiden er på ingen måte ferdig enda. Dette er et
+                    hobbyprosjekt og er publisert for å vise fremgangen.
+                </div>
             </div>
         </div>
     );
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
     return {
         error: state.auth.error,
         userCreated: state.auth.userCreated,
-        loading: state.auth.loading
+        loading: state.auth.loading,
     };
 };
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
     return {
-        onCreate: userData => dispatch(actions.createUser(userData)),
-        onLogin: userData => dispatch(actions.loginUser(userData))
+        onCreate: (userData) => dispatch(actions.createUser(userData)),
+        onLogin: (userData) => dispatch(actions.loginUser(userData)),
     };
 };
 
