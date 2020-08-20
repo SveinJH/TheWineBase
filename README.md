@@ -4,7 +4,7 @@ It will use the public API from Norways "Vinmonopolet" to fetch and display usef
 User authentication and management will be provided by Firebase's Authentication REST API.
 
 ## Check it out
-Even though the project is far from finished, I have deployed it in order to get feedback and find bugs. You can check it out at [www.twb.sjhoie.no](www.twb.sjhoie.no)
+Even though the project is far from finished, I have deployed it in order to get feedback and find bugs. You can check it out at [www.twb.sjhoie.no](https://www.twb.sjhoie.no)
 
 ## Getting Started
 Clone and yada yada... (TODO)
