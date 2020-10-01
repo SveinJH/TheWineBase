@@ -123,7 +123,7 @@ const Login = (props) => {
                     >
                         {form}
                         <Button btnType="Default" disabled={!validForm}>
-                            {!isSignup ? 'LOGG IN' : 'REGISTRER'}
+                            {!isSignup ? 'LOGG INN' : 'REGISTRER'}
                         </Button>
                     </form>
                 ) : (
